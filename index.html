@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldi Ramadhan — IT Support & System Implementation</title>
+    <meta name="description" content="Portofolio Profesional Aldi Ramadhan - IT Support, Administrasi Server, Jaringan, dan Implementasi Sistem.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-slate-900 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-slate-900 tracking-tight text-lg">
+                ALDI RAMADHAN<span class="text-blue-600">.</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+                <a href="#tentang" class="hover:text-slate-900 transition">Profil</a>
+                <a href="#keahlian" class="hover:text-slate-900 transition">Keahlian</a>
+                <a href="#proyek" class="hover:text-slate-900 transition">Proyek & Infrastruktur</a>
+                <a href="#sertifikasi" class="hover:text-slate-900 transition">Sertifikasi</a>
+                <a href="#pengalaman" class="hover:text-slate-900 transition">Pengalaman</a>
+            </nav>
+            <a href="#kontak" class="text-xs font-semibold bg-slate-900 text-white px-4 py-2 rounded-md hover:bg-slate-800 transition">
+                Hubungi Saya
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6">
+
+        <!-- Hero / Tentang Saya -->
+        <section id="tentang" class="py-16 md:py-24 border-b border-slate-200">
+            <div class="grid md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-8 space-y-5">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-200/70 text-slate-700 text-xs font-mono font-medium">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                        IT Support • Network & System Infrastructure
+                    </div>
+                    <h1 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+                        Menjaga keandalan infrastruktur, jaringan, dan sistem operasional.
+                    </h1>
+                    <p class="text-slate-600 leading-relaxed text-base">
+                        Lulusan <strong>S1 Sistem Informasi Universitas Pamulang</strong> dengan dasar pendidikan <strong>Teknik Komputer dan Jaringan (TKJ)</strong> yang berfokus pada bidang IT Support, Infrastruktur Jaringan, dan Implementasi Sistem.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-base">
+                        Berpengalaman praktis dalam membangun <em>virtual environment</em> (VMware, VirtualBox), konfigurasi jaringan dasar (IP addressing, subnetting), administrasi Windows Server (Active Directory, GPO, DHCP), serta merancang dan men-<em>deploy</em> aplikasi operasional berbasis web ke layanan <em>hosting</em>. Memiliki kemampuan <em>problem-solving</em> yang tanggap dalam menangani <em>troubleshooting</em> perangkat keras, perangkat lunak, maupun dukungan pengguna (<em>user support</em>).
+                    </p>
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <a href="#proyek" class="bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-md hover:bg-blue-700 transition">
+                            Lihat Bukti Praktik & Proyek
+                        </a>
+                        <a href="cv-aldi.pdf" target="_blank" class="bg-white border border-slate-300 text-slate-700 text-sm font-semibold px-5 py-2.5 rounded-md hover:bg-slate-100 transition">
+                            Unduh CV (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Foto Profil -->
+                <div class="md:col-span-4">
+                    <div class="aspect-[4/5] rounded-xl overflow-hidden bg-slate-200 border border-slate-300 shadow-sm relative">
+                        <!-- Letakkan foto di folder img/profil.jpg -->
+                        <img src="img/aldi.jpeg" alt="Aldi Ramadhan" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/600x750/e2e8f0/475569?text=Foto+Profil+(img/profil.jpg)'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keahlian Teknis -->
+        <section id="keahlian" class="py-16 border-b border-slate-200">
+            <div class="mb-10">
+                <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Kompetensi Teknis</p>
+                <h2 class="text-2xl font-bold text-slate-900 mt-1">Keahlian & Fokus Teknis</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="font-semibold text-slate-900 text-base mb-3">Server & Virtualisasi</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>• Windows Server Administration</li>
+                        <li>• Active Directory (AD DS) & OU</li>
+                        <li>• Group Policy Objects (GPO)</li>
+                        <li>• Konfigurasi DHCP Server</li>
+                        <li>• Oracle VM VirtualBox & VMware</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="font-semibold text-slate-900 text-base mb-3">Jaringan & Perangkat</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>• Administrasi LAN / WLAN</li>
+                        <li>• IPv4 Addressing & Subnetting</li>
+                        <li>• Uji Konektivitas & Routing Dasar</li>
+                        <li>• Troubleshooting Hardware & OS</li>
+                        <li>• Instalasi Windows & Linux</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="font-semibold text-slate-900 text-base mb-3">Sistem & Dukungan Pengguna</h3>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li>• Deployment Web Hosting & Domain</li>
+                        <li>• Administrasi Database (MySQL)</li>
+                        <li>• IT Helpdesk & Application Support</li>
+                        <li>• On-Site Problem Solving</li>
+                        <li>• Koordinasi & Komunikasi Tim</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyek Sistem & Bukti Infrastruktur -->
+        <section id="proyek" class="py-16 border-b border-slate-200">
+            <div class="mb-10">
+                <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Portofolio Teknis</p>
+                <h2 class="text-2xl font-bold text-slate-900 mt-1">Implementasi Sistem & Laboratorium Infrastruktur</h2>
+                <p class="text-sm text-slate-500 mt-1">Klik pada gambar untuk memperbesar tampilan layar penuh.</p>
+            </div>
+
+            <!-- Bagian A: Proyek Sistem Web -->
+            <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold mb-4">A. Pengembangan & Implementasi Sistem Operasional</h3>
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+
+                <!-- Project 1: Tuan Dimsum -->
+                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col">
+                    <div class="aspect-video bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('img/tuan-dimsum.png', 'Dashboard Web POS & Inventori Tuan Dimsum')">
+                        <img src="img/tuan-dimsum.png" alt="Web POS Tuan Dimsum" 
+                             class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
+                             onerror="this.src='https://placehold.co/800x450/f1f5f9/475569?text=Screenshot+Tuan+Dimsum+(img/tuan-dimsum.png)'">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                    LIVE & AKTIF DIGUNAKAN
+                                </span>
+                                <a href="https://dimsumnya.my.id" target="_blank" class="text-xs font-mono text-blue-600 hover:underline">
+                                    dimsumnya.my.id ↗
+                                </a>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900">Web POS & Manajemen Stok — Tuan Dimsum</h4>
+                            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                                Merancang, membangun, dan mengimplementasikan sistem kasir serta inventori berbasis web (Laravel Filament v3) untuk mendukung operasional harian karyawan secara <em>real-time</em>. Bertanggung jawab atas konfigurasi <em>deployment</em> ke <em>hosting</em>, pemeliharaan <em>database</em>, serta pendampingan teknis (<em>application support</em>) bagi staf kasir dalam memantau antrean pesanan, mencetak struk, mengawasi sisa stok <em>freezer</em> dan barang rusak, hingga memisahkan omset harian otomatis antara QRIS dan uang tunai di laci kasir.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-mono text-slate-500">
+                            <span>Laravel Filament</span> • <span>Web Hosting</span> • <span>Application Support</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Kopi Nusa -->
+                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col">
+                    <div class="aspect-video bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('img/kopi-nusa.png', 'Dashboard Web POS Kopi Nusa (kopinusaan.my.id)')">
+                        <img src="img/kopi-nusa.png" alt="Web POS Kopi Nusa" 
+                             class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
+                             onerror="this.src='https://placehold.co/800x450/f1f5f9/475569?text=Screenshot+Kopi+Nusa+(img/kopi-nusa.png)'">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                    LIVE • 1.916+ TRANSAKSI
+                                </span>
+                                <a href="https://kopinusaan.my.id" target="_blank" class="text-xs font-mono text-blue-600 hover:underline">
+                                    kopinusaan.my.id ↗
+                                </a>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900">Web Point of Sale (POS) — Kopi Nusa</h4>
+                            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                                Membangun aplikasi kasir berbasis web dan mengelola konfigurasi <em>domain</em> serta <em>web hosting</em> publik yang berjalan stabil menangani lebih dari <strong>1.916 transaksi operasional nyata</strong> (1.072 transaksi tunai dan 844 transaksi QRIS). Peran mencakup pengelolaan infrastruktur <em>hosting</em>, pemeliharaan fitur kasir baru dan <em>reset</em> harian, pemantauan produk terlaris, serta dukungan teknis langsung bagi staf kasir.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-mono text-slate-500">
+                            <span>PHP & MySQL</span> • <span>Domain & Hosting</span> • <span>POS System</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: WebGudang Qupro -->
+                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden md:col-span-2 grid md:grid-cols-12">
+                    <div class="md:col-span-5 aspect-video md:aspect-auto bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('img/webgudang-qupro.png', 'Dashboard Sistem Informasi Gudang & Donasi PT Qupro Manajemen Indonesia')">
+                        <img src="img/webgudang-qupro.png" alt="WebGudang Qupro" 
+                             class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
+                             onerror="this.src='https://placehold.co/800x500/f1f5f9/475569?text=Screenshot+WebGudang+Qupro+(img/webgudang-qupro.png)'">
+                    </div>
+                    <div class="md:col-span-7 p-6 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300">
+                                    LOCAL SERVER
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900">Sistem Informasi Gudang & Donasi — PT Qupro Manajemen Indonesia</h4>
+                            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+                                Merancang dan membuat aplikasi sistem informasi berbasis web beserta struktur <em>database</em> pada <em>local server</em> untuk mendigitalisasi pengelolaan inventori gudang dan pencatatan donasi secara terstruktur. Dilengkapi fitur pemantauan arus keluar-masuk barang 30 hari terakhir, deteksi peringatan stok menipis (<em>warning stock</em>), pengelompokan distribusi barang, serta pencatatan riwayat aktivitas (<em>activity log</em>) antara Admin dan Supplier secara <em>real-time</em>.
+                            </p>
+                        </div>
+                        <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-mono text-slate-500">
+                            <span>Local Server</span> • <span>Database Management</span> • <span>Inventory & Log System</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Bagian B: Bukti Praktik Server & Jaringan -->
+            <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold mb-4">B. Praktik Administrasi Server & Pengujian Jaringan</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <!-- Lab 1: Windows Server AD & DHCP -->
+                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col">
+                    <div class="aspect-video bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('img/server-ad-dhcp.png', 'Konfigurasi Active Directory (OU) & DHCP pada Windows Server')">
+                        <img src="img/server-ad-dhcp.png" alt="Windows Server AD & DHCP" 
+                             class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
+                             onerror="this.src='https://placehold.co/800x450/f1f5f9/475569?text=Screenshot+AD+OU+%26+DHCP+(img/server-ad-dhcp.png)'">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[11px] font-mono text-slate-500 uppercase">Virtual Lab • Windows Server</span>
+                        <h4 class="text-base font-bold text-slate-900">Administrasi Active Directory (OU) & DHCP Server</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Pengelolaan infrastruktur server menggunakan lingkungan virtualisasi Oracle VM VirtualBox dengan skema <em>Server-Client</em>. Mencakup instalasi Windows Server, pembuatan struktur <em>Organizational Unit (OU)</em> dan manajemen akun pengguna melalui Active Directory, serta distribusi IP Address otomatis menggunakan layanan DHCP Server.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Lab 2: Ping Server-Client -->
+                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col">
+                    <div class="aspect-video bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('img/jaringan-ping.png', 'Pengujian Konektivitas Jaringan Dua Arah (Server-Client)')">
+                        <img src="img/jaringan-ping.png" alt="Uji Koneksi Ping Server Client" 
+                             class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
+                             onerror="this.src='https://placehold.co/800x450/f1f5f9/475569?text=Screenshot+Ping+Server-Client+(img/jaringan-ping.png)'">
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[11px] font-mono text-slate-500 uppercase">Networking • Troubleshooting</span>
+                        <h4 class="text-base font-bold text-slate-900">Konfigurasi Jaringan & Uji Konektivitas (Ping)</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Pengaturan parameter jaringan lokal (TCP/IPv4, Subnet Mask, Default Gateway) serta verifikasi komunikasi data dua arah antara Windows Server dan komputer Client menggunakan protokol ICMP (<em>ping</em>) melalui Command Prompt untuk memastikan koneksi stabil tanpa <em>packet loss</em>.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sertifikasi & Kompetensi -->
+        <section id="sertifikasi" class="py-16 border-b border-slate-200">
+            <div class="mb-10">
+                <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Lisensi & Pelatihan</p>
+                <h2 class="text-2xl font-bold text-slate-900 mt-1">Sertifikasi Kompetensi</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Sertifikat 1 -->
+                <div class="bg-white rounded-lg border border-slate-200 overflow-hidden">
+                    <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer" onclick="openLightbox('img/sertif-coursera.jpg', 'Technical Support Fundamentals (Google) - Coursera')">
+                        <img src="img/sertif-coursera.jpg" alt="Sertifikat Coursera Google" 
+                             class="w-full h-full object-cover hover:scale-[1.02] transition"
+                             onerror="this.src='https://placehold.co/600x450/f1f5f9/475569?text=Sertifikat+Coursera+(img/sertif-coursera.jpg)'">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-xs font-mono text-slate-500">Coursera • Okt 2026</p>
+                        <h3 class="font-semibold text-slate-900 text-sm mt-1">Technical Support Fundamentals (Google)</h3>
+                    </div>
+                </div>
+
+                <!-- Sertifikat 2 -->
+                <div class="bg-white rounded-lg border border-slate-200 overflow-hidden">
+                    <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer" onclick="openLightbox('img/sertif-udemy.jpg', 'IT Support Technical Skills Bootcamp - Udemy')">
+                        <img src="img/sertif-udemy.jpg" alt="Sertifikat Udemy Bootcamp" 
+                             class="w-full h-full object-cover hover:scale-[1.02] transition"
+                             onerror="this.src='https://placehold.co/600x450/f1f5f9/475569?text=Sertifikat+Udemy+(img/sertif-udemy.jpg)'">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-xs font-mono text-slate-500">Udemy • Sep 2026</p>
+                        <h3 class="font-semibold text-slate-900 text-sm mt-1">IT Support Technical Skills Bootcamp</h3>
+                    </div>
+                </div>
+
+                <!-- Sertifikat 3 -->
+                <div class="bg-white rounded-lg border border-slate-200 overflow-hidden">
+                    <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer" onclick="openLightbox('img/sertif-bnsp.jpg', 'Sertifikat Kompetensi TKJ (KKNI Level II) - BNSP')">
+                        <img src="img/sertif-bnsp.jpg" alt="Sertifikat BNSP TKJ" 
+                             class="w-full h-full object-cover hover:scale-[1.02] transition"
+                             onerror="this.src='https://placehold.co/600x450/f1f5f9/475569?text=Sertifikat+BNSP+(img/sertif-bnsp.jpg)'">
+                    </div>
+                    <div class="p-4">
+                        <p class="text-xs font-mono text-slate-500">BNSP • Okt 2022</p>
+                        <h3 class="font-semibold text-slate-900 text-sm mt-1">Sertifikat Kompetensi Teknik Komputer & Jaringan (KKNI Level II)</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pengalaman Kerja & Pendidikan -->
+        <section id="pengalaman" class="py-16 border-b border-slate-200">
+            <div class="grid md:grid-cols-12 gap-10">
+                
+                <!-- Kolom Pengalaman Kerja -->
+                <div class="md:col-span-7 space-y-6">
+                    <div>
+                        <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Rekam Jejak</p>
+                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Pengalaman Kerja & Operasional</h2>
+                    </div>
+
+                    <div class="space-y-6 border-l-2 border-slate-200 pl-5">
+                        <!-- Pengalaman 1 -->
+                        <div class="relative">
+                            <span class="text-xs font-mono text-slate-500">Feb 2026 • PT Qupro Indonesia</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-0.5">Koordinator Tim Fundraising — Event Sekolah Islam Madani Nurul Fikri Boarding School Lembang</h3>
+                            <ul class="mt-2 space-y-1.5 text-sm text-slate-600 list-disc list-inside">
+                                <li>Memimpin dan memberikan arahan (<em>briefing</em>) kepada tim relawan daerah (santri) terkait tata cara dan strategi penggalangan dana yang terstruktur di lapangan.</li>
+                                <li>Mengoordinasikan alur pergerakan tim relawan selama kegiatan berlangsung untuk memastikan proses berjalan tertib dan kondusif.</li>
+                                <li>Bertanggung jawab penuh atas rekapitulasi, penghitungan, dan pencatatan total donasi yang terkumpul secara teliti, akurat, dan transparan.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Pengalaman 2 -->
+                        <div class="relative pt-2">
+                            <span class="text-xs font-mono text-slate-500">Sep 2025 • PT Qupro Indonesia</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-0.5">Liaison Officer (LO) — Event HNI</h3>
+                            <ul class="mt-2 space-y-1.5 text-sm text-slate-600 list-disc list-inside">
+                                <li>Bertanggung jawab mendampingi dan mengoordinasikan jadwal <em>talent</em> utama (Cing Abdel) untuk memastikan seluruh agenda acara berjalan sesuai <em>rundown</em>.</li>
+                                <li>Menjadi narahubung utama yang menjaga kelancaran komunikasi antara <em>talent</em>, pihak penyelenggara acara, dan tim internal Qupro Indonesia.</li>
+                                <li>Menangani kebutuhan logistik lapangan dan merespons kendala secara cepat dan solutif (<em>on-site problem solving</em>).</li>
+                            </ul>
+                        </div>
+
+                        <!-- Pengalaman 3 -->
+                        <div class="relative pt-2">
+                            <span class="text-xs font-mono text-slate-500">Mar 2024 • Bank Saqu</span>
+                            <h3 class="text-base font-bold text-slate-900 mt-0.5">Verifikator — PT SEBELAS APRIL LIAN MIPRO</h3>
+                            <ul class="mt-2 space-y-1.5 text-sm text-slate-600 list-disc list-inside">
+                                <li>Mendampingi dan memandu calon nasabah secara langsung dalam proses registrasi serta verifikasi pembukaan rekening baru pada aplikasi digital Bank Saqu.</li>
+                                <li>Melakukan pendataan dan rekapitulasi identitas nasabah yang berhasil membuka rekening secara tertib untuk pendistribusian <em>voucher</em> belanja JakCloth.</li>
+                                <li>Menangani <em>follow-up</em> serta membantu penyelesaian kendala teknis aplikasi yang dialami nasabah saat proses pembukaan rekening berlangsung.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Pendidikan -->
+                <div class="md:col-span-5 space-y-6">
+                    <div>
+                        <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Akademik</p>
+                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Pendidikan</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Universitas Pamulang -->
+                        <div class="bg-white p-5 rounded-lg border border-slate-200 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-slate-50 border border-slate-200 p-1.5 flex-shrink-0 flex items-center justify-center overflow-hidden">
+                                <img src="img/logo-unpam.png" 
+                                     alt="Logo Universitas Pamulang" 
+                                     class="w-full h-full object-contain"
+                                     onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=unpam.ac.id&sz=128';">
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-slate-500">2022 – 2026</span>
+                                <h3 class="font-bold text-slate-900 text-base mt-0.5">Universitas Pamulang</h3>
+                                <p class="text-sm text-slate-600 mt-0.5">S1 — Sistem Informasi</p>
+                            </div>
+                        </div>
+
+                        <!-- SMK Al Hidayah 1 Jakarta -->
+                        <div class="bg-white p-5 rounded-lg border border-slate-200 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-slate-50 border border-slate-200 p-1.5 flex-shrink-0 flex items-center justify-center overflow-hidden">
+                                <img src="img/logo-alhidayah.png" 
+                                     alt="Logo SMK Al Hidayah 1 Jakarta" 
+                                     class="w-full h-full object-contain"
+                                     onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=smkalhidayah1jakarta.sch.id&sz=128';">
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-slate-500">2019 – 2022</span>
+                                <h3 class="font-bold text-slate-900 text-base mt-0.5">SMK Al Hidayah 1 Jakarta</h3>
+                                <p class="text-sm text-slate-600 mt-0.5">Teknik Komputer dan Jaringan (TKJ)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="py-16">
+            <div class="bg-slate-900 text-white rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div class="space-y-2">
+                    <p class="text-xs font-mono uppercase tracking-wider text-blue-400">Kontak & Ketersediaan</p>
+                    <h2 class="text-2xl font-bold">Siap berkontribusi untuk tim IT perusahaan Anda.</h2>
+                    <p class="text-sm text-slate-300">Domisili: Depok / Jakarta Selatan • Tersedia untuk posisi IT Support, Helpdesk, & Network/System Admin.</p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <!-- Ganti dengan email & nomor WA aktif kamu -->
+                    <a href="mailto:aldiramadhanspam1@gmail.com" class="bg-white text-slate-900 text-sm font-semibold px-5 py-2.5 rounded-md hover:bg-slate-100 transition">
+                        Kirim Email
+                    </a>
+                    <a href="https://wa.me/089630748375" target="_blank" class="bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-md hover:bg-blue-500 transition">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-500">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-2">
+            <span>© 2026 Aldi Ramadhan. All rights reserved.</span>
+            <span class="font-mono">IT Support & Infrastructure Portfolio</span>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox untuk Zoom Gambar -->
+    <div id="lightbox" class="fixed inset-0 z-50 hidden bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="max-w-4xl w-full space-y-3" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center text-white">
+                <p id="lightbox-caption" class="text-sm font-medium"></p>
+                <button onclick="closeLightbox()" class="text-xs font-mono bg-white/10 hover:bg-white/20 px-3 py-1 rounded">
+                    Tutup [ESC]
+                </button>
+            </div>
+            <img id="lightbox-img" src="" alt="Preview" class="w-full max-h-[80vh] object-contain rounded-lg border border-slate-700 bg-slate-900">
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, caption) {
+            const modal = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+            img.src = src;
+            cap.textContent = caption;
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
