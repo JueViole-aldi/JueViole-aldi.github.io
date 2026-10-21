@@ -227,129 +227,116 @@
                 </article>
             </div>
 
-            <!-- Bagian B: Bukti Praktik Server, Linux & Dokumentasi GitHub -->
+<!-- Bagian B: Arsitektur Lab Server, Jaringan & Dokumentasi GitHub -->
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
-                <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold">
-                    B. Praktik Administrasi Server, Jaringan & Dokumentasi Lab
-                </h3>
+                <div>
+                    <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold">
+                        B. Laboratorium Infrastruktur Server & Jaringan (Home Lab Documentation)
+                    </h3>
+                </div>
                 <a href="https://github.com/JueViole-aldi?tab=repositories" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-slate-700 hover:text-blue-600 transition">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                    Lihat Semua Repository GitHub ↗
+                    Profil GitHub (JueViole-aldi) ↗
                 </a>
             </div>
 
-            <!-- Grid 3 Kartu Praktik Utama -->
-            <div class="grid md:grid-cols-3 gap-6 mb-8">
+            <!-- 2 Kartu Dokumentasi Repository Utama (Desain Seragam) -->
+            <div class="grid md:grid-cols-2 gap-6">
 
-                <!-- Lab 1: Windows Server AD & DHCP -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between">
-                    <div>
-                        <div class="aspect-video bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('server-ad-dhcp.png', 'Konfigurasi Active Directory (OU) & DHCP pada Windows Server')">
-                            <img src="server-ad-dhcp.png" alt="Windows Server AD & DHCP" 
-                                 class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
-                                 onerror="this.src='https://placehold.co/800x450/f1f5f9/475569?text=AD+OU+%26+DHCP'">
+                <!-- Repo 1: Windows Server Home Lab -->
+                <article class="bg-white rounded-lg border border-slate-200 p-6 flex flex-col justify-between space-y-5">
+                    <div class="space-y-4">
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-mono text-sm font-bold flex-shrink-0">
+                                    WIN
+                                </div>
+                                <div>
+                                    <span class="text-[11px] font-mono text-blue-600 font-medium">JueViole-aldi / windows-server-homelab</span>
+                                    <h4 class="text-base font-bold text-slate-900">Windows Server & Network Infrastructure Lab</h4>
+                                </div>
+                            </div>
+                            <span class="text-[11px] font-mono bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded whitespace-nowrap">
+                                Dokumentasi & Screenshot
+                            </span>
                         </div>
-                        <div class="p-5 space-y-2">
-                            <span class="text-[11px] font-mono text-slate-500 uppercase">Windows Server • AD DS</span>
-                            <h4 class="text-base font-bold text-slate-900">Active Directory (OU) & DHCP Server</h4>
-                            <p class="text-sm text-slate-600 leading-relaxed">
-                                Pembuatan struktur <em>Organizational Unit (OU)</em>, manajemen akun pengguna terpusat, serta pembagian IP Address otomatis ke komputer klien pada jaringan virtual.
-                            </p>
+
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Dokumentasi konfigurasi dan pengujian lingkungan jaringan <em>Server–Client</em> menggunakan Oracle VM VirtualBox. Mencakup rincian arsitektur serta tangkapan layar konfigurasi pada modul berikut:
+                        </p>
+
+                        <!-- Daftar Modul di dalam Repo -->
+                        <div class="space-y-2.5 pt-1">
+                            <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
+                                <p class="text-xs font-bold text-slate-800">01. Active Directory (AD DS) & DHCP Server</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Manajemen akun pengguna dalam <em>Organizational Unit (OU)</em> serta distribusi IP Address otomatis ke Client.</p>
+                            </div>
+                            <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
+                                <p class="text-xs font-bold text-slate-800">02. Distribusi Software Terpusat (SMB File Server)</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Konfigurasi <em>Shared Folder</em> di Server sebagai repositori <em>installer</em> MS Office untuk instalasi langsung lewat jaringan lokal.</p>
+                            </div>
+                            <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
+                                <p class="text-xs font-bold text-slate-800">03. Konfigurasi TCP/IPv4 & Uji Konektivitas (ICMP Ping)</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Verifikasi komunikasi data dua arah antara Windows Server dan Client melalui Command Prompt tanpa <em>packet loss</em>.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100">
-                        <a href="https://github.com/JueViole-aldi/windows-server-homelab" target="_blank" class="text-xs font-mono text-blue-600 hover:underline flex items-center justify-between">
-                            <span>Dokumentasi & Konfigurasi</span>
-                            <span>GitHub ↗</span>
+
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-mono text-slate-500">AD DS • DHCP • SMB • ICMP</span>
+                        <a href="https://github.com/JueViole-aldi/windows-server-homelab" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold bg-slate-900 text-white px-3.5 py-2 rounded-md hover:bg-slate-800 transition">
+                            Lihat Dokumentasi & Screenshot ↗
                         </a>
                     </div>
                 </article>
 
-                <!-- Lab 2: File Server & Distribusi MS Office -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between">
-                    <div>
-                        <div class="aspect-video bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('server-fileshare.png', 'File Server & Distribusi Installer MS Office via Network Share')">
-                            <img src="server-fileshare.png" alt="File Server MS Office Share" 
-                                 class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
-                                 onerror="this.src='https://placehold.co/800x450/f1f5f9/475569?text=File+Server+MS+Office+(Segera+Hadir)'">
+                <!-- Repo 2: Linux Server Administration -->
+                <article class="bg-white rounded-lg border border-slate-200 p-6 flex flex-col justify-between space-y-5">
+                    <div class="space-y-4">
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-slate-900 text-amber-400 flex items-center justify-center font-mono text-sm font-bold flex-shrink-0">
+                                    &gt;_
+                                </div>
+                                <div>
+                                    <span class="text-[11px] font-mono text-blue-600 font-medium">JueViole-aldi / linux-server-administration</span>
+                                    <h4 class="text-base font-bold text-slate-900">Linux (Ubuntu Server) Administration Lab</h4>
+                                </div>
+                            </div>
+                            <span class="text-[11px] font-mono bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded whitespace-nowrap">
+                                Dokumentasi & Screenshot
+                            </span>
                         </div>
-                        <div class="p-5 space-y-2">
-                            <span class="text-[11px] font-mono text-slate-500 uppercase">File Server • SMB Share</span>
-                            <h4 class="text-base font-bold text-slate-900">Distribusi Software Terpusat (Network Installer)</h4>
-                            <p class="text-sm text-slate-600 leading-relaxed">
-                                Konfigurasi <em>Shared Folder</em> pada Windows Server sebagai repositori terpusat penyimpanan <em>installer</em> (MS Office), sehingga komputer Client dapat menginstal aplikasi langsung lewat jaringan lokal tanpa mengunduh ulang.
-                            </p>
+
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Dokumentasi konfigurasi dan pengelolaan sistem operasi Linux berbasis baris perintah (<em>Command Line Interface</em> / CLI) untuk kebutuhan infrastruktur server. Mencakup modul praktik berikut:
+                        </p>
+
+                        <!-- Daftar Modul di dalam Repo -->
+                        <div class="space-y-2.5 pt-1">
+                            <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
+                                <p class="text-xs font-bold text-slate-800">01. Instalasi Sistem & Manajemen Paket Dasar</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Konfigurasi mesin virtual Ubuntu Server, struktur direktori Linux, serta pengelolaan repositori paket (<code>apt</code>).</p>
+                            </div>
+                            <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
+                                <p class="text-xs font-bold text-slate-800">02. Manajemen User, Group & Hak Akses File</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Pengaturan otorisasi pengguna (<code>adduser</code>, <code>sudo</code>) dan keamanan izin akses direktori (<code>chmod</code>, <code>chown</code>).</p>
+                            </div>
+                            <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
+                                <p class="text-xs font-bold text-slate-800">03. Jaringan Dasar, Remote SSH & File Sharing</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Pengaturan IP Statis (Netplan), kendali server jarak jauh via OpenSSH, serta integrasi pembagian folder lintas OS (Samba).</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100">
-                        <a href="https://github.com/JueViole-aldi/windows-server-homelab" target="_blank" class="text-xs font-mono text-blue-600 hover:underline flex items-center justify-between">
-                            <span>Dokumentasi & Konfigurasi</span>
-                            <span>GitHub ↗</span>
+
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-mono text-slate-500">Ubuntu CLI • Chmod • SSH • Samba</span>
+                        <a href="https://github.com/JueViole-aldi/linux-server-administration" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold bg-slate-900 text-white px-3.5 py-2 rounded-md hover:bg-slate-800 transition">
+                            Lihat Dokumentasi & Screenshot ↗
                         </a>
                     </div>
                 </article>
 
-                <!-- Lab 3: Ping Server-Client -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between">
-                    <div>
-                        <div class="aspect-video bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('jaringan-ping.png', 'Pengujian Konektivitas Jaringan Dua Arah (Server-Client)')">
-                            <img src="jaringan-ping.png" alt="Uji Koneksi Ping Server Client" 
-                                 class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
-                                 onerror="this.src='https://placehold.co/800x450/f1f5f9/475569?text=Ping+Server-Client'">
-                        </div>
-                        <div class="p-5 space-y-2">
-                            <span class="text-[11px] font-mono text-slate-500 uppercase">Networking • ICMP</span>
-                            <h4 class="text-base font-bold text-slate-900">Konfigurasi Jaringan & Uji Konektivitas</h4>
-                            <p class="text-sm text-slate-600 leading-relaxed">
-                                Pengaturan parameter TCP/IPv4, Subnet Mask, serta verifikasi komunikasi data dua arah antara Windows Server dan Client melalui Command Prompt tanpa <em>packet loss</em>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-5 py-3 bg-slate-50 border-t border-slate-100">
-                        <a href="https://github.com/JueViole-aldi/windows-server-homelab" target="_blank" class="text-xs font-mono text-blue-600 hover:underline flex items-center justify-between">
-                            <span>Dokumentasi & Konfigurasi</span>
-                            <span>GitHub ↗</span>
-                        </a>
-                    </div>
-                </article>
-
-            </div>
-
-            <!-- Wadah Arsip Repository Belajar Linux & Server -->
-            <div class="bg-white rounded-lg border border-slate-200 p-6">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-slate-200">
-                    <div>
-                        <h4 class="text-base font-bold text-slate-900">Arsip Catatan Lab & Eksplorasi Sistem (GitHub Repository)</h4>
-                        <p class="text-xs text-slate-500 mt-0.5">Dokumentasi langkah-langkah instalasi, konfigurasi baris perintah (CLI), dan pengujian server.</p>
-                    </div>
-                    <span class="text-[11px] font-mono bg-slate-100 text-slate-600 px-2.5 py-1 rounded border border-slate-200 self-start sm:self-center">
-                        Active Home Lab
-                    </span>
-                </div>
-
-                <div class="divide-y divide-slate-100 text-sm">
-                    <!-- Baris Repo 1: Windows Server -->
-                    <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                        <div>
-                            <span class="font-mono text-xs text-blue-600 font-medium">JueViole-aldi / windows-server-homelab</span>
-                            <p class="text-slate-600 text-xs mt-0.5">Dokumentasi setup Active Directory (OU), Group Policy (GPO), DHCP Server, dan File Sharing (SMB) untuk distribusi installer MS Office ke Client.</p>
-                        </div>
-                        <a href="https://github.com/JueViole-aldi/windows-server-homelab" target="_blank" class="text-xs font-mono text-slate-700 hover:text-blue-600 border border-slate-200 bg-slate-50 px-3 py-1.5 rounded self-start sm:self-center whitespace-nowrap">
-                            Buka Repo ↗
-                        </a>
-                    </div>
-
-                    <!-- Baris Repo 2: Linux Server -->
-                    <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                        <div>
-                            <span class="font-mono text-xs text-blue-600 font-medium">JueViole-aldi / linux-server-administration</span>
-                            <p class="text-slate-600 text-xs mt-0.5">Catatan eksplorasi dan praktik instalasi Linux (Ubuntu Server), manajemen user & hak akses (chmod/chown), serta konfigurasi jaringan via CLI.</p>
-                        </div>
-                        <a href="https://github.com/JueViole-aldi/linux-server-administration" target="_blank" class="text-xs font-mono text-slate-700 hover:text-blue-600 border border-slate-200 bg-slate-50 px-3 py-1.5 rounded self-start sm:self-center whitespace-nowrap">
-                            Buka Repo ↗
-                        </a>
-                    </div>
-                </div>
             </div>
         </section>
 
