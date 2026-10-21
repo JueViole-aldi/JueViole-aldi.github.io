@@ -231,7 +231,7 @@
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                 <div>
                     <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold">
-                        B. Laboratorium Infrastruktur Server & Jaringan (Home Lab Documentation)
+                        B. Laboratorium Infrastruktur Server & Sistem Operasi (Home Lab Documentation)
                     </h3>
                 </div>
                 <a href="https://github.com/JueViole-aldi?tab=repositories" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-slate-700 hover:text-blue-600 transition">
@@ -240,7 +240,7 @@
                 </a>
             </div>
 
-            <!-- 2 Kartu Dokumentasi Repository Utama (Desain Seragam) -->
+            <!-- 2 Kartu Dokumentasi Repository Utama -->
             <div class="grid md:grid-cols-2 gap-6">
 
                 <!-- Repo 1: Windows Server Home Lab -->
@@ -253,7 +253,7 @@
                                 </div>
                                 <div>
                                     <span class="text-[11px] font-mono text-blue-600 font-medium">JueViole-aldi / windows-server-homelab</span>
-                                    <h4 class="text-base font-bold text-slate-900">Windows Server & Network Infrastructure Lab</h4>
+                                    <h4 class="text-base font-bold text-slate-900">Windows Server & Endpoint Administration</h4>
                                 </div>
                             </div>
                             <span class="text-[11px] font-mono bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded whitespace-nowrap">
@@ -262,28 +262,28 @@
                         </div>
 
                         <p class="text-sm text-slate-600 leading-relaxed">
-                            Dokumentasi konfigurasi dan pengujian lingkungan jaringan <em>Server–Client</em> menggunakan Oracle VM VirtualBox. Mencakup rincian arsitektur serta tangkapan layar konfigurasi pada modul berikut:
+                            Dokumentasi pengelolaan infrastruktur jaringan <em>Server–Client</em> terpusat menggunakan Windows Server pada lingkungan virtualisasi Oracle VM VirtualBox:
                         </p>
 
-                        <!-- Daftar Modul di dalam Repo -->
+                        <!-- 3 Kelompok Modul Inti Windows Server -->
                         <div class="space-y-2.5 pt-1">
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">01. Active Directory (AD DS) & DHCP Server</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Manajemen akun pengguna dalam <em>Organizational Unit (OU)</em> serta distribusi IP Address otomatis ke Client.</p>
+                                <p class="text-xs font-bold text-slate-800">01. Active Directory (AD DS), OU & DHCP Server</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Manajemen akun pengguna per divisi dalam <em>Organizational Unit (OU)</em> serta otomasi distribusi IP Address ke komputer Client.</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">02. Distribusi Software Terpusat (SMB File Server)</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Konfigurasi <em>Shared Folder</em> di Server sebagai repositori <em>installer</em> MS Office untuk instalasi langsung lewat jaringan lokal.</p>
+                                <p class="text-xs font-bold text-slate-800">02. Group Policy (GPO) & SMB File Server (MS Office)</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Penerapan kebijakan keamanan perangkat klien terpusat (GPO) serta penyediaan <em>Shared Folder</em> untuk instalasi aplikasi via jaringan lokal.</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">03. Konfigurasi TCP/IPv4 & Uji Konektivitas (ICMP Ping)</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Verifikasi komunikasi data dua arah antara Windows Server dan Client melalui Command Prompt tanpa <em>packet loss</em>.</p>
+                                <p class="text-xs font-bold text-slate-800">03. System Log (Event Viewer), Firewall & Uji Jaringan</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Investigasi <em>error</em> sistem melalui <em>Event Viewer</em>, pengaturan <em>Windows Firewall</em>, serta verifikasi konektivitas dua arah (ICMP Ping).</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-500">AD DS • DHCP • SMB • ICMP</span>
+                        <span class="text-xs font-mono text-slate-500">AD DS • GPO • SMB • Event Viewer</span>
                         <a href="https://github.com/JueViole-aldi/windows-server-homelab" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold bg-slate-900 text-white px-3.5 py-2 rounded-md hover:bg-slate-800 transition">
                             Lihat Dokumentasi & Screenshot ↗
                         </a>
@@ -309,28 +309,28 @@
                         </div>
 
                         <p class="text-sm text-slate-600 leading-relaxed">
-                            Dokumentasi konfigurasi dan pengelolaan sistem operasi Linux berbasis baris perintah (<em>Command Line Interface</em> / CLI) untuk kebutuhan infrastruktur server. Mencakup modul praktik berikut:
+                            Dokumentasi pengoperasian, pemeliharaan, dan pengamanan sistem operasi Linux berbasis baris perintah (<em>Command Line Interface</em> / CLI) untuk kebutuhan server:
                         </p>
 
-                        <!-- Daftar Modul di dalam Repo -->
+                        <!-- 3 Kelompok Modul Inti Linux Server -->
                         <div class="space-y-2.5 pt-1">
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">01. Instalasi Sistem & Manajemen Paket Dasar</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Konfigurasi mesin virtual Ubuntu Server, struktur direktori Linux, serta pengelolaan repositori paket (<code>apt</code>).</p>
+                                <p class="text-xs font-bold text-slate-800">01. Manajemen User, Group & Hak Akses (Permissions)</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Pengelolaan akun pengguna (<code>adduser</code>, <code>sudo</code>) dan pengamanan izin akses direktori kerja menggunakan <code>chmod</code> serta <code>chown</code>.</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">02. Manajemen User, Group & Hak Akses File</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Pengaturan otorisasi pengguna (<code>adduser</code>, <code>sudo</code>) dan keamanan izin akses direktori (<code>chmod</code>, <code>chown</code>).</p>
+                                <p class="text-xs font-bold text-slate-800">02. Manajemen Paket, Storage & Investigasi System Log</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Administrasi repositori paket (<code>apt</code>), pemantauan kapasitas penyimpanan (<code>df -h</code>, <code>lsblk</code>), serta pelacakan <em>error</em> pada <code>/var/log/syslog</code>.</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">03. Jaringan Dasar, Remote SSH & File Sharing</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Pengaturan IP Statis (Netplan), kendali server jarak jauh via OpenSSH, serta integrasi pembagian folder lintas OS (Samba).</p>
+                                <p class="text-xs font-bold text-slate-800">03. Remote SSH Hardening, Backup Data & Firewall (UFW)</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Konfigurasi akses jarak jauh via OpenSSH, prosedur pencadangan data (<code>tar</code>/<code>rsync</code>), serta pembatasan <em>port</em> dengan <code>ufw</code>.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs font-mono text-slate-500">Ubuntu CLI • Chmod • SSH • Samba</span>
+                        <span class="text-xs font-mono text-slate-500">Ubuntu CLI • Chmod • Syslog • UFW & SSH</span>
                         <a href="https://github.com/JueViole-aldi/linux-server-administration" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold bg-slate-900 text-white px-3.5 py-2 rounded-md hover:bg-slate-800 transition">
                             Lihat Dokumentasi & Screenshot ↗
                         </a>
