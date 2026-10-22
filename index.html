@@ -347,55 +347,94 @@
             </div>
         </section>
 
-        <!-- Sertifikasi & Kompetensi -->
+       <!-- Sertifikasi & Pelatihan (Ukuran Normal 3 Kolom Sejajar) -->
         <section id="sertifikasi" class="py-16 border-b border-slate-200">
             <div class="mb-10">
-                <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Lisensi & Pelatihan</p>
+                <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Kredensial & Lisensi</p>
                 <h2 class="text-2xl font-bold text-slate-900 mt-1">Sertifikasi Kompetensi</h2>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Sertifikat 1 -->
-                <div class="bg-white rounded-lg border border-slate-200 overflow-hidden">
-                    <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer" onclick="openLightbox('sertif-coursera.jpg', 'Technical Support Fundamentals (Google) - Coursera')">
-                        <img src="sertif-coursera.jpg" alt="Sertifikat Coursera Google" 
-                             class="w-full h-full object-cover hover:scale-[1.02] transition"
-                             onerror="this.src='https://placehold.co/600x450/f1f5f9/475569?text=Sertifikat+Coursera+(sertif-coursera.jpg)'">
-                    </div>
-                    <div class="p-4">
-                        <p class="text-xs font-mono text-slate-500">Coursera • Okt 2026</p>
-                        <h3 class="font-semibold text-slate-900 text-sm mt-1">Technical Support Fundamentals (Google)</h3>
+            <!-- Grid 3 Kolom agar Ukuran Sertifikat Normal & Rapi -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Kartu 1: Sertifikat Google Coursera (Bisa Geser Kiri-Kanan) -->
+                <div class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[16/10] bg-slate-100 border-b border-slate-200 overflow-hidden relative group">
+                            <img id="coursera-card-img" src="sertif-coursera.jpg" alt="Sertifikat Google IT Support Coursera" 
+                                 onclick="openCourseraLightbox()"
+                                 class="w-full h-full object-cover cursor-pointer group-hover:scale-[1.02] transition duration-300"
+                                 onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src='img/sertif-coursera.jpg';}else{this.src='https://placehold.co/600x400/f1f5f9/475569?text=Sertifikat+Coursera';}">
+                            
+                            <!-- Indikator Urutan Sertifikat -->
+                            <span id="coursera-card-badge" class="absolute top-2 right-2 bg-slate-900/80 backdrop-blur-sm text-white text-[10px] font-mono px-2 py-0.5 rounded-full pointer-events-none">
+                                1 / 2 Sertifikat
+                            </span>
+
+                            <!-- Tombol Geser Kiri -->
+                            <button type="button" onclick="changeCourseraSlide(-1, event)" class="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-slate-900/70 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition shadow" title="Sertifikat Sebelumnya">
+                                &#10094;
+                            </button>
+
+                            <!-- Tombol Geser Kanan -->
+                            <button type="button" onclick="changeCourseraSlide(1, event)" class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-slate-900/70 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition shadow" title="Sertifikat Berikutnya">
+                                &#10095;
+                            </button>
+                        </div>
+
+                        <div class="p-4">
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="text-[11px] font-mono text-blue-600 font-semibold uppercase">Google • Coursera</span>
+                                <span class="text-[11px] font-mono text-slate-400">Geser ‹ ›</span>
+                            </div>
+                            <h3 id="coursera-card-title" class="font-bold text-slate-900 text-sm mt-1">
+                                1. Technical Support Fundamentals
+                            </h3>
+                            <p class="text-xs text-slate-500 mt-1">
+                                Rangkaian Sertifikasi Google IT Support (Klik gambar untuk memperbesar & geser).
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Sertifikat 2 -->
-                <div class="bg-white rounded-lg border border-slate-200 overflow-hidden">
-                    <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer" onclick="openLightbox('sertif-udemy.jpg', 'IT Support Technical Skills Bootcamp - Udemy')">
-                        <img src="sertif-udemy.jpg" alt="Sertifikat Udemy Bootcamp" 
-                             class="w-full h-full object-cover hover:scale-[1.02] transition"
-                             onerror="this.src='https://placehold.co/600x450/f1f5f9/475569?text=Sertifikat+Udemy+(sertif-udemy.jpg)'">
-                    </div>
-                    <div class="p-4">
-                        <p class="text-xs font-mono text-slate-500">Udemy • Sep 2026</p>
-                        <h3 class="font-semibold text-slate-900 text-sm mt-1">IT Support Technical Skills Bootcamp</h3>
+                <!-- Kartu 2: Sertifikat BNSP -->
+                <div class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[16/10] bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'Sertifikat Kompetensi BNSP — Teknik Komputer dan Jaringan')">
+                            <img src="sertif-bnsp.jpg" alt="Sertifikat BNSP" 
+                                 class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
+                                 onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src='img/sertif-bnsp.jpg';}else{this.src='https://placehold.co/600x400/f1f5f9/475569?text=Sertifikat+BNSP';}">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[11px] font-mono text-blue-600 font-semibold uppercase">BNSP • Lisensi Nasional</span>
+                            <h3 class="font-bold text-slate-900 text-sm mt-1">Sertifikasi Kompetensi TKJ</h3>
+                            <p class="text-xs text-slate-500 mt-1">
+                                Sertifikasi keahlian instalasi jaringan lokal (LAN) dan administrasi perangkat jaringan.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Sertifikat 3 -->
-                <div class="bg-white rounded-lg border border-slate-200 overflow-hidden">
-                    <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer" onclick="openLightbox('sertif-bnsp.jpg', 'Sertifikat Kompetensi TKJ (KKNI Level II) - BNSP')">
-                        <img src="sertif-bnsp.jpg" alt="Sertifikat BNSP TKJ" 
-                             class="w-full h-full object-cover hover:scale-[1.02] transition"
-                             onerror="this.src='https://placehold.co/600x450/f1f5f9/475569?text=Sertifikat+BNSP+(sertif-bnsp.jpg)'">
-                    </div>
-                    <div class="p-4">
-                        <p class="text-xs font-mono text-slate-500">BNSP • Okt 2022</p>
-                        <h3 class="font-semibold text-slate-900 text-sm mt-1">Sertifikat Kompetensi Teknik Komputer & Jaringan (KKNI Level II)</h3>
+                <!-- Kartu 3: Sertifikat Udemy -->
+                <div class="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[16/10] bg-slate-100 border-b border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox(this.querySelector('img').src, 'IT Support Technical Skills Bootcamp — Udemy')">
+                            <img src="sertif-udemy.jpg" alt="Sertifikat Udemy IT Support" 
+                                 class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
+                                 onerror="if(!this.dataset.fallback){this.dataset.fallback=1;this.src='img/sertif-udemy.jpg';}else{this.src='https://placehold.co/600x400/f1f5f9/475569?text=Sertifikat+Udemy';}">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-[11px] font-mono text-blue-600 font-semibold uppercase">Udemy • Bootcamp</span>
+                            <h3 class="font-bold text-slate-900 text-sm mt-1">IT Support Technical Skills Bootcamp</h3>
+                            <p class="text-xs text-slate-500 mt-1">
+                                Pelatihan teknis manajemen Active Directory, Windows Server, dan troubleshooting sistem.
+                            </p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
-
         <!-- Pengalaman Kerja & Pendidikan -->
         <section id="pengalaman" class="py-16 border-b border-slate-200">
             <div class="grid md:grid-cols-12 gap-10">
@@ -517,43 +556,131 @@
         <a href="#pengalaman" class="hover:text-blue-600 transition">Pendidikan</a>
     </nav>
     <!-- Footer -->
-    <footer class="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-500">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-2">
-            <span>© 2026 Aldi Ramadhan. All rights reserved.</span>
-            <span class="font-mono">IT Support & Infrastructure Portfolio</span>
-        </div>
-    </footer>
-
-    <!-- Modal Lightbox untuk Zoom Gambar -->
-    <div id="lightbox" class="fixed inset-0 z-50 hidden bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeLightbox()">
-        <div class="max-w-4xl w-full space-y-3" onclick="event.stopPropagation()">
-            <div class="flex justify-between items-center text-white">
-                <p id="lightbox-caption" class="text-sm font-medium"></p>
-                <button onclick="closeLightbox()" class="text-xs font-mono bg-white/10 hover:bg-white/20 px-3 py-1 rounded">
+<!-- Lightbox Modal untuk Zoom Gambar & Slider Sertifikat -->
+    <div id="lightbox" class="fixed inset-0 z-50 hidden bg-slate-900/90 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="relative max-w-4xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+            <!-- Baris Judul & Tombol Tutup -->
+            <div class="w-full flex justify-between items-center text-white mb-3 px-1">
+                <span id="lightbox-caption" class="text-sm font-medium"></span>
+                <button onclick="closeLightbox()" class="text-xs font-mono bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded text-white transition">
                     Tutup [ESC]
                 </button>
             </div>
-            <img id="lightbox-img" src="" alt="Preview" class="w-full max-h-[80vh] object-contain rounded-lg border border-slate-700 bg-slate-900">
+
+            <!-- Kontainer Gambar + Tombol Panah Kiri Kanan -->
+            <div class="relative w-full flex items-center justify-center">
+                <!-- Tombol Panah Kiri di Lightbox (Hanya muncul saat buka sertifikat Coursera) -->
+                <button id="lightbox-prev" type="button" onclick="navigateLightbox(-1)" class="hidden absolute left-2 sm:-left-12 z-10 w-10 h-10 rounded-full bg-white/15 hover:bg-white/30 text-white items-center justify-center text-lg transition shadow-lg">
+                    &#10094;
+                </button>
+
+                <img id="lightbox-img" src="" alt="Preview" class="max-h-[82vh] w-auto rounded-lg shadow-2xl border border-slate-700 bg-white">
+
+                <!-- Tombol Panah Kanan di Lightbox (Hanya muncul saat buka sertifikat Coursera) -->
+                <button id="lightbox-next" type="button" onclick="navigateLightbox(1)" class="hidden absolute right-2 sm:-right-12 z-10 w-10 h-10 rounded-full bg-white/15 hover:bg-white/30 text-white items-center justify-center text-lg transition shadow-lg">
+                    &#10095;
+                </button>
+            </div>
         </div>
     </div>
 
     <script>
-        function openLightbox(src, caption) {
+        // =========================================================================
+        // DAFTAR SERTIFIKAT COURSERA KAMU (TAMBAHKAN DI SINI SAAT LULUS MODUL BARU)
+        // =========================================================================
+        const courseraCerts = [
+            {
+                src: 'sertif-coursera.jpg',
+                shortTitle: '1. Technical Support Fundamentals',
+                fullCaption: 'Sertifikat 1/2: Technical Support Fundamentals (Google) - Coursera'
+            },
+            {
+                src: 'sertif-coursera-2.jpg', // <-- Upload sertifikat Bits & Bytes kamu dengan nama ini
+                shortTitle: '2. The Bits and Bytes of Computer Networking',
+                fullCaption: 'Sertifikat 2/2: The Bits and Bytes of Computer Networking (Google) - Coursera'
+            }
+            // Nanti kalau Modul 3, 4, 5 lulus, tinggal tambahkan koma di atas lalu copy-paste baris objeknya ke bawah
+        ];
+
+        let currentCourseraIndex = 0;
+        let isCourseraMode = false;
+
+        // Fungsi geser sertifikat langsung di kartu halaman depan
+        function changeCourseraSlide(direction, event) {
+            if (event) event.stopPropagation();
+            currentCourseraIndex = (currentCourseraIndex + direction + courseraCerts.length) % courseraCerts.length;
+            updateCourseraCard();
+        }
+
+        function updateCourseraCard() {
+            const cert = courseraCerts[currentCourseraIndex];
+            document.getElementById('coursera-card-img').src = cert.src;
+            document.getElementById('coursera-card-title').innerText = cert.shortTitle;
+            document.getElementById('coursera-card-badge').innerText = (currentCourseraIndex + 1) + ' / ' + courseraCerts.length + ' Sertifikat';
+        }
+
+        // Fungsi buka Lightbox khusus kartu Coursera (Bisa geser kiri-kanan)
+        function openCourseraLightbox() {
+            isCourseraMode = true;
+            const cert = courseraCerts[currentCourseraIndex];
+            showLightboxModal(cert.src, cert.fullCaption, true);
+        }
+
+        // Fungsi buka Lightbox biasa (Untuk foto proyek & sertifikat BNSP/Udemy)
+        function openLightbox(imageSrc, captionText) {
+            isCourseraMode = false;
+            showLightboxModal(imageSrc, captionText, false);
+        }
+
+        function showLightboxModal(imageSrc, captionText, showArrows) {
             const modal = document.getElementById('lightbox');
-            const img = document.getElementById('lightbox-img');
-            const cap = document.getElementById('lightbox-caption');
-            img.src = src;
-            cap.textContent = caption;
+            const modalImg = document.getElementById('lightbox-img');
+            const modalCaption = document.getElementById('lightbox-caption');
+            const prevBtn = document.getElementById('lightbox-prev');
+            const nextBtn = document.getElementById('lightbox-next');
+
+            modalImg.src = imageSrc;
+            modalCaption.innerText = captionText;
+
+            if (showArrows && courseraCerts.length > 1) {
+                prevBtn.classList.remove('hidden');
+                prevBtn.classList.add('flex');
+                nextBtn.classList.remove('hidden');
+                nextBtn.classList.add('flex');
+            } else {
+                prevBtn.classList.add('hidden');
+                prevBtn.classList.remove('flex');
+                nextBtn.classList.add('hidden');
+                nextBtn.classList.remove('flex');
+            }
+
             modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Fungsi geser kiri-kanan saat di dalam Lightbox layar penuh
+        function navigateLightbox(direction) {
+            if (!isCourseraMode) return;
+            currentCourseraIndex = (currentCourseraIndex + direction + courseraCerts.length) % courseraCerts.length;
+            updateCourseraCard();
+            const cert = courseraCerts[currentCourseraIndex];
+            document.getElementById('lightbox-img').src = cert.src;
+            document.getElementById('lightbox-caption').innerText = cert.fullCaption;
         }
 
         function closeLightbox() {
-            document.getElementById('lightbox').classList.add('hidden');
+            const modal = document.getElementById('lightbox');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
         }
 
+        // Dukungan tombol Keyboard: ESC untuk tutup, Panah Kiri/Kanan untuk geser sertifikat
         document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('lightbox');
+            if (modal.classList.contains('hidden')) return;
+
             if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight' && isCourseraMode) navigateLightbox(1);
+            if (e.key === 'ArrowLeft' && isCourseraMode) navigateLightbox(-1);
         });
     </script>
-</body>
-</html>
