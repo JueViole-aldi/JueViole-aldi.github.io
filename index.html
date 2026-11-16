@@ -247,10 +247,11 @@
                 </a>
             </div>
 
-          <!-- 2 Kartu Dokumentasi Repository Utama (Sudah Diperbaiki untuk Layar HP) -->
+
+            <!-- 2 Kartu Dokumentasi Repository Utama (Dengan Rincian Lengkap) -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                <!-- Repo 1: Windows Server Home Lab -->
+                <!-- Repo 1: Windows Server 2019 & Win 10 Home Lab -->
                 <article class="min-w-0 bg-white rounded-lg border border-slate-200 p-5 sm:p-6 flex flex-col justify-between space-y-5">
                     <div class="space-y-4">
                         <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2.5">
@@ -260,7 +261,7 @@
                                 </div>
                                 <div class="min-w-0">
                                     <span class="block text-[11px] font-mono text-blue-600 font-medium truncate">JueViole-aldi / windows-server-homelab</span>
-                                    <h4 class="text-base font-bold text-slate-900 leading-snug">Windows Server & Endpoint Administration</h4>
+                                    <h4 class="text-base font-bold text-slate-900 leading-snug">Windows Server 2019 & Endpoint Windows 10 Lab</h4>
                                 </div>
                             </div>
                             <span class="self-start text-[11px] font-mono bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded whitespace-nowrap flex-shrink-0">
@@ -269,35 +270,35 @@
                         </div>
 
                         <p class="text-sm text-slate-600 leading-relaxed">
-                            Dokumentasi pengelolaan infrastruktur jaringan <em>Server–Client</em> terpusat menggunakan Windows Server pada lingkungan virtualisasi Oracle VM VirtualBox:
+                            Praktik laboratorium mandiri dalam membangun, mengelola, dan melakukan <em>troubleshooting</em> jaringan <strong>Server–Client (Internal Network)</strong> menggunakan <strong>Windows Server 2019</strong> dan <strong>Windows 10 Pro (Domain-Joined)</strong> di Oracle VM VirtualBox:
                         </p>
 
-                        <!-- 3 Kelompok Modul Inti Windows Server -->
+                        <!-- 3 Kelompok Modul Detail Windows Server -->
                         <div class="space-y-2.5 pt-1">
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">01. Active Directory (AD DS), OU & DHCP Server</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Manajemen akun pengguna per divisi dalam <em>Organizational Unit (OU)</em> serta otomasi distribusi IP Address ke komputer Client.</p>
+                                <p class="text-xs font-bold text-slate-800">01. Active Directory (`dsa.msc`), OU & DHCP (`dhcpmgmt.msc`)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pengelolaan akun pengguna dan <em>Organizational Unit (OU)</em> per divisi, konfigurasi <em>DHCP Scope</em> (`.10`–`.100`), penanganan <em>Rogue DHCP / IP Conflict</em> (<code>ipconfig /release & /renew</code>), serta uji konektivitas ICMP Ping dua arah (<code>0% packet loss</code>).</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">02. Group Policy (GPO) & SMB File Server (MS Office)</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Penerapan kebijakan keamanan perangkat klien terpusat (GPO) serta penyediaan <em>Shared Folder</em> untuk instalasi aplikasi via jaringan lokal.</p>
+                                <p class="text-xs font-bold text-slate-800">02. SMB File Server & Deployment MS Office LTSC 2021 (`.bat`)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Penyediaan <em>Shared Folder</em> terpusat, pemetaan <em>Network Drive</em> (<code>net use Z:</code>), serta otomatisasi instalasi <strong>Microsoft Office LTSC 2021</strong> menggunakan <em>Office Deployment Tool</em> (<code>setup.exe</code> & <code>Configuration.xml</code>) melalui <em>Batch Script</em>.</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">03. System Log (Event Viewer), Firewall & Uji Jaringan</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Investigasi <em>error</em> sistem melalui <em>Event Viewer</em>, pengaturan <em>Windows Firewall</em>, serta verifikasi konektivitas dua arah (ICMP Ping).</p>
+                                <p class="text-xs font-bold text-slate-800">03. Group Policy (`gpmc.msc`), Event Viewer & Firewall (`wf.msc`)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Penerapan pembatasan akses <em>Control Panel</em> di sisi Client via GPO (<code>gpupdate /force</code> & <code>gpresult /r</code>), pelacakan <em>error log</em> sistem di <em>Windows Event Viewer</em>, dan pengaturan aturan <em>port</em> pada <em>Windows Firewall</em>.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                        <span class="text-xs font-mono text-slate-500">AD DS • GPO • SMB • Event Viewer</span>
+                        <span class="text-xs font-mono text-slate-500">AD DS • DHCP • SMB ODT • GPO • Firewall</span>
                         <a href="https://github.com/JueViole-aldi/windows-server-homelab" target="_blank" class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold bg-slate-900 text-white px-4 py-2.5 rounded-md hover:bg-slate-800 transition w-full sm:w-auto">
                             Lihat Dokumentasi & Screenshot ↗
                         </a>
                     </div>
                 </article>
 
-                <!-- Repo 2: Linux Server Administration -->
+                <!-- Repo 2: Linux Ubuntu 26.04.1 LTS Administration -->
                 <article class="min-w-0 bg-white rounded-lg border border-slate-200 p-5 sm:p-6 flex flex-col justify-between space-y-5">
                     <div class="space-y-4">
                         <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2.5">
@@ -307,7 +308,7 @@
                                 </div>
                                 <div class="min-w-0">
                                     <span class="block text-[11px] font-mono text-blue-600 font-medium truncate">JueViole-aldi / linux-server-administration</span>
-                                    <h4 class="text-base font-bold text-slate-900 leading-snug">Linux (Ubuntu Server) Administration Lab</h4>
+                                    <h4 class="text-base font-bold text-slate-900 leading-snug">Linux (Ubuntu 26.04.1 LTS) Administration Lab</h4>
                                 </div>
                             </div>
                             <span class="self-start text-[11px] font-mono bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded whitespace-nowrap flex-shrink-0">
@@ -316,28 +317,28 @@
                         </div>
 
                         <p class="text-sm text-slate-600 leading-relaxed">
-                            Dokumentasi pengoperasian, pemeliharaan, dan pengamanan sistem operasi Linux berbasis baris perintah (<em>Command Line Interface</em> / CLI) untuk kebutuhan server:
+                            Praktik laboratorium mandiri dalam pengoperasian, pemantauan sumber daya, dan pengamanan sistem operasi <strong>Linux Ubuntu 26.04.1 LTS</strong> berbasis baris perintah (<em>Command Line Interface</em> / CLI):
                         </p>
 
-                        <!-- 3 Kelompok Modul Inti Linux Server -->
+                        <!-- 3 Kelompok Modul Detail Linux Server -->
                         <div class="space-y-2.5 pt-1">
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">01. Manajemen User, Group & Hak Akses (Permissions)</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Pengelolaan akun pengguna (<code>adduser</code>, <code>sudo</code>) dan pengamanan izin akses direktori kerja menggunakan <code>chmod</code> serta <code>chown</code>.</p>
+                                <p class="text-xs font-bold text-slate-800">01. Manajemen User, Grup Divisi & Hak Akses (`chmod 750`)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pembuatan akun staf (<code>adduser</code>), pengelompokan grup divisi (<code>groupadd</code>, <code>usermod</code>, <code>gpasswd</code>), perubahan kepemilikan direktori (<code>chown</code>), serta pembatasan izin akses folder kerja bersama (<code>chmod 750</code>).</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">02. Manajemen Paket, Storage & Investigasi System Log</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Administrasi repositori paket (<code>apt</code>), pemantauan kapasitas penyimpanan (<code>df -h</code>, <code>lsblk</code>), serta pelacakan <em>error</em> pada <code>/var/log/syslog</code>.</p>
+                                <p class="text-xs font-bold text-slate-800">02. Manajemen Paket, Storage Audit & System Logs</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pengelolaan paket aplikasi (<code>apt</code> & <code>dpkg -s</code>), pemeriksaan kapasitas partisi dan direktori (<code>df -h</code>, <code>lsblk</code>, <code>du -sh</code>), pemantauan CPU/RAM & PID (<code>htop</code>), serta investigasi log pada <code>/var/log/syslog</code> dengan <code>tail</code> dan <code>grep</code>.</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">03. Remote SSH Hardening, Backup Data & Firewall (UFW)</p>
-                                <p class="text-xs text-slate-600 mt-0.5">Konfigurasi akses jarak jauh via OpenSSH, prosedur pencadangan data (<code>tar</code>/<code>rsync</code>), serta pembatasan <em>port</em> dengan <code>ufw</code>.</p>
+                                <p class="text-xs font-bold text-slate-800">03. Firewall (UFW), Remote SSH Lintas OS & Backup (`tar` / Cron)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pengamanan port layanan dengan <em>Uncomplicated Firewall</em> (<code>ufw allow ssh</code> & <code>80/tcp</code>), pengujian kendali jarak jauh via OpenSSH dari CMD Windows 10, serta kompresi <em>backup</em> direktori (<code>tar -czvf</code>) dan jadwal otomatis (<code>crontab -e</code>).</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                        <span class="text-xs font-mono text-slate-500">Ubuntu CLI • Chmod • Syslog • UFW & SSH</span>
+                        <span class="text-xs font-mono text-slate-500">Ubuntu 26.04 LTS • Chmod • Syslog • SSH</span>
                         <a href="https://github.com/JueViole-aldi/linux-server-administration" target="_blank" class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold bg-slate-900 text-white px-4 py-2.5 rounded-md hover:bg-slate-800 transition w-full sm:w-auto">
                             Lihat Dokumentasi & Screenshot ↗
                         </a>
