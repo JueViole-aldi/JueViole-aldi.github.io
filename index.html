@@ -60,8 +60,8 @@
 
         <!-- Hero / Tentang Saya -->
         <section id="tentang" class="py-16 md:py-24 border-b border-slate-200">
-            <div class="grid md:grid-cols-12 gap-10 items-center">
-                <div class="md:col-span-8 space-y-5">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-8 min-w-0 space-y-5">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-200/70 text-slate-700 text-xs font-mono font-medium">
                         <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
                         IT Support • Network & System Infrastructure
@@ -86,7 +86,7 @@
                 </div>
 
                 <!-- Foto Profil -->
-                <div class="md:col-span-4">
+                <div class="md:col-span-4 min-w-0">
                     <div class="aspect-[4/5] rounded-xl overflow-hidden bg-slate-200 border border-slate-300 shadow-sm relative">
                         <img src="aldi.jpeg" alt="Aldi Ramadhan" 
                              class="w-full h-full object-cover"
@@ -208,13 +208,13 @@
                 </article>
 
                 <!-- Project 3: WebGudang Qupro -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden md:col-span-2 grid md:grid-cols-12">
-                    <div class="md:col-span-5 aspect-video md:aspect-auto bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('webgudang-qupro.png', 'Dashboard Sistem Informasi Gudang & Donasi PT Qupro Manajemen Indonesia')">
+                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden md:col-span-2 grid grid-cols-1 md:grid-cols-12">
+                    <div class="md:col-span-5 min-w-0 aspect-video md:aspect-auto bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 overflow-hidden cursor-pointer group" onclick="openLightbox('webgudang-qupro.png', 'Dashboard Sistem Informasi Gudang & Donasi PT Qupro Manajemen Indonesia')">
                         <img src="webgudang-qupro.png" alt="WebGudang Qupro" 
                              class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
                              onerror="this.src='https://placehold.co/800x500/f1f5f9/475569?text=Screenshot+WebGudang+Qupro+(webgudang-qupro.png)'">
                     </div>
-                    <div class="md:col-span-7 p-6 flex flex-col justify-between space-y-4">
+                    <div class="md:col-span-7 min-w-0 p-6 flex flex-col justify-between space-y-4">
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300">
@@ -356,13 +356,13 @@
             <div class="space-y-6">
 
                 <!-- Kartu 1: Google IT Support Professional Certificate -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden grid md:grid-cols-12">
+                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
                     <!-- Kolom Kiri: Preview & Slider Sertifikat -->
-                    <div class="md:col-span-5 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
-                        <div class="relative flex-1 min-h-[220px] max-h-[280px] overflow-hidden group flex items-center justify-center bg-slate-100">
+                    <div class="md:col-span-5 min-w-0 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
+                        <div class="relative w-full h-56 sm:h-64 md:h-auto md:flex-1 md:min-h-[240px] overflow-hidden group flex items-center justify-center bg-slate-100 p-2">
                             <img id="coursera-card-img" src="sertif-coursera.jpg" alt="Sertifikat Google IT Support Coursera"
                                  onclick="openSliderLightbox('coursera')"
-                                 class="w-full h-full object-cover cursor-pointer group-hover:scale-[1.02] transition duration-300"
+                                 class="w-full h-full object-contain cursor-pointer group-hover:scale-[1.02] transition duration-300"
                                  onerror="handleCertImgError(this, 'Sertifikat+Coursera')">
 
                             <span id="coursera-card-badge" class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-mono px-2.5 py-0.5 rounded pointer-events-none">
@@ -377,16 +377,16 @@
                                 &#10095;
                             </button>
                         </div>
-                        <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-2">
-                            <span id="coursera-card-title" class="text-xs font-medium text-slate-700 truncate">
+                        <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-2 min-w-0">
+                            <span id="coursera-card-title" class="text-xs font-medium text-slate-700 truncate min-w-0 flex-1">
                                 1. Technical Support Fundamentals
                             </span>
-                            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap">Klik untuk zoom</span>
+                            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap flex-shrink-0">Klik untuk zoom</span>
                         </div>
                     </div>
 
                     <!-- Kolom Kanan: Detail Program & Fokus Modul -->
-                    <div class="md:col-span-7 p-6 flex flex-col justify-between space-y-5">
+                    <div class="md:col-span-7 min-w-0 p-5 sm:p-6 flex flex-col justify-between space-y-5">
                         <div class="space-y-4">
                             <div class="flex flex-wrap items-center justify-between gap-2">
                                 <span class="text-xs font-mono font-semibold text-blue-600">Google • Coursera</span>
@@ -428,10 +428,10 @@
                 </article>
 
                 <!-- Kartu 2: Sertifikat Kompetensi BNSP -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden grid md:grid-cols-12">
+                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
                     <!-- Kolom Kiri: Preview & Slider Depan/Belakang BNSP -->
-                    <div class="md:col-span-5 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
-                        <div class="relative flex-1 min-h-[240px] max-h-[290px] overflow-hidden group flex items-center justify-center bg-slate-100 p-2">
+                    <div class="md:col-span-5 min-w-0 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
+                        <div class="relative w-full h-64 sm:h-72 md:h-auto md:flex-1 md:min-h-[260px] overflow-hidden group flex items-center justify-center bg-slate-100 p-2">
                             <img id="bnsp-card-img" src="sertif-bnsp.jpg" alt="Sertifikat Kompetensi BNSP"
                                  onclick="openSliderLightbox('bnsp')"
                                  class="w-full h-full object-contain cursor-pointer group-hover:scale-[1.02] transition duration-300"
@@ -449,16 +449,16 @@
                                 &#10095;
                             </button>
                         </div>
-                        <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-2">
-                            <span id="bnsp-card-title" class="text-xs font-medium text-slate-700 truncate">
+                        <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-2 min-w-0">
+                            <span id="bnsp-card-title" class="text-xs font-medium text-slate-700 truncate min-w-0 flex-1">
                                 1. Halaman Depan — Sertifikat Kompetensi
                             </span>
-                            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap">Klik untuk zoom</span>
+                            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap flex-shrink-0">Klik untuk zoom</span>
                         </div>
                     </div>
 
                     <!-- Kolom Kanan: Detail BNSP -->
-                    <div class="md:col-span-7 p-6 flex flex-col justify-between space-y-5">
+                    <div class="md:col-span-7 min-w-0 p-5 sm:p-6 flex flex-col justify-between space-y-5">
                         <div class="space-y-4">
                             <div class="flex flex-wrap items-center justify-between gap-2">
                                 <span class="text-xs font-mono font-semibold text-blue-600">BNSP • LSP SMK Al Hidayah 1 Jakarta</span>
@@ -481,7 +481,7 @@
                                 </div>
                                 <div class="pl-3 border-l-2 border-slate-300">
                                     <span class="font-semibold text-slate-900">Detail Registrasi:</span>
-                                    No. Sertifikat <code>61100 2522 2 0000942 2022</code> • No. Reg. <code>J. 1252 00751 2022</code> (Diterbitkan 21 Oktober 2022).
+                                    No. Sertifikat <code class="break-all">61100 2522 2 0000942 2022</code> • No. Reg. <code class="break-all">J. 1252 00751 2022</code> (Diterbitkan 21 Oktober 2022).
                                 </div>
                             </div>
                         </div>
@@ -496,25 +496,25 @@
                 </article>
 
                 <!-- Kartu 3: Sertifikat Udemy -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden grid md:grid-cols-12">
+                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
                     <!-- Kolom Kiri: Preview Sertifikat Udemy -->
-                    <div class="md:col-span-5 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
-                        <div class="relative flex-1 min-h-[220px] max-h-[280px] overflow-hidden group flex items-center justify-center bg-white">
+                    <div class="md:col-span-5 min-w-0 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
+                        <div class="relative w-full h-56 sm:h-64 md:h-auto md:flex-1 md:min-h-[240px] overflow-hidden group flex items-center justify-center bg-white p-2">
                             <img src="sertif-udemy.jpg" alt="Sertifikat Udemy IT Support Technical Skills Bootcamp"
                                  onclick="openLightbox(this.src, 'IT Support Technical Skills Bootcamp — Udemy (Jobskillshare Community)')"
                                  class="w-full h-full object-contain cursor-pointer group-hover:scale-[1.02] transition duration-300"
                                  onerror="handleCertImgError(this, 'Sertifikat+Udemy')">
                         </div>
-                        <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-2">
-                            <span class="text-xs font-medium text-slate-700 truncate">
+                        <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-2 min-w-0">
+                            <span class="text-xs font-medium text-slate-700 truncate min-w-0 flex-1">
                                 Sertifikat Penyelesaian — 42,5 Jam
                             </span>
-                            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap">Klik untuk zoom</span>
+                            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap flex-shrink-0">Klik untuk zoom</span>
                         </div>
                     </div>
 
                     <!-- Kolom Kanan: Detail Udemy -->
-                    <div class="md:col-span-7 p-6 flex flex-col justify-between space-y-5">
+                    <div class="md:col-span-7 min-w-0 p-5 sm:p-6 flex flex-col justify-between space-y-5">
                         <div class="space-y-4">
                             <div class="flex flex-wrap items-center justify-between gap-2">
                                 <span class="text-xs font-mono font-semibold text-blue-600">Udemy • Jobskillshare Community</span>
@@ -556,10 +556,10 @@
 
         <!-- Pengalaman Kerja & Pendidikan -->
         <section id="pengalaman" class="py-16 border-b border-slate-200">
-            <div class="grid md:grid-cols-12 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
                 
                 <!-- Kolom Pengalaman Kerja -->
-                <div class="md:col-span-7 space-y-6">
+                <div class="md:col-span-7 min-w-0 space-y-6">
                     <div>
                         <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Rekam Jejak</p>
                         <h2 class="text-2xl font-bold text-slate-900 mt-1">Pengalaman Kerja & Operasional</h2>
@@ -602,7 +602,7 @@
                 </div>
 
                 <!-- Kolom Pendidikan -->
-                <div class="md:col-span-5 space-y-6">
+                <div class="md:col-span-5 min-w-0 space-y-6">
                     <div>
                         <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Akademik</p>
                         <h2 class="text-2xl font-bold text-slate-900 mt-1">Pendidikan</h2>
@@ -645,7 +645,7 @@
         </section>
 
         <!-- Kontak -->
-        <section id="kontak" class="py-16">
+        <section id="kontak" class="pt-16 pb-24 md:pb-16">
             <div class="bg-slate-900 text-white rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div class="space-y-2">
                     <p class="text-xs font-mono uppercase tracking-wider text-blue-400">Kontak & Ketersediaan</p>
