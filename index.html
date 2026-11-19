@@ -8,10 +8,10 @@
 
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f172a'/><path d='M26 34 L48 50 L26 66' stroke='%233b82f6' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/><line x1='54' y1='66' x2='76' y2='66' stroke='%23ffffff' stroke-width='10' stroke-linecap='round'/></svg>">
     
-    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <!-- Google Fonts: DM Sans (Santai & Bersih) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,8 +20,8 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
+                        sans: ['DM Sans', 'sans-serif'],
+                        mono: ['IBM Plex Mono', 'monospace'],
                     }
                 }
             }
@@ -62,7 +62,7 @@
         <section id="tentang" class="py-16 md:py-24 border-b border-slate-200">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
                 <div class="md:col-span-8 min-w-0 space-y-5">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-200/70 text-slate-700 text-xs font-mono font-medium">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-200/70 text-slate-700 text-xs font-medium">
                         <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
                         IT Support • Network & System Infrastructure
                     </div>
@@ -99,7 +99,7 @@
         <!-- Keahlian Teknis -->
         <section id="keahlian" class="py-16 border-b border-slate-200">
             <div class="mb-10">
-                <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Kompetensi Teknis</p>
+                <p class="text-xs uppercase tracking-wider text-blue-600 font-semibold">Kompetensi Teknis</p>
                 <h2 class="text-2xl font-bold text-slate-900 mt-1">Keahlian & Fokus Teknis</h2>
             </div>
 
@@ -142,13 +142,13 @@
         <!-- Proyek Sistem & Bukti Infrastruktur -->
         <section id="proyek" class="py-16 border-b border-slate-200">
             <div class="mb-10">
-                <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Portofolio Teknis</p>
+                <p class="text-xs uppercase tracking-wider text-blue-600 font-semibold">Portofolio Teknis</p>
                 <h2 class="text-2xl font-bold text-slate-900 mt-1">Implementasi Sistem & Laboratorium Infrastruktur</h2>
                 <p class="text-sm text-slate-500 mt-1">Klik pada gambar untuk memperbesar tampilan layar penuh.</p>
             </div>
 
             <!-- Bagian A: Proyek Sistem Web -->
-            <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold mb-4">A. Pengembangan & Implementasi Sistem Operasional</h3>
+            <h3 class="text-xs uppercase tracking-wider text-slate-500 font-semibold mb-4">A. Pengembangan & Implementasi Sistem Operasional</h3>
             <div class="grid md:grid-cols-2 gap-6 mb-12">
 
                 <!-- Project 1: Tuan Dimsum -->
@@ -161,10 +161,10 @@
                     <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div>
                             <div class="flex items-center justify-between gap-2 mb-2">
-                                <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
                                     LIVE & AKTIF DIGUNAKAN
                                 </span>
-                                <a href="https://dimsumnya.my.id" target="_blank" class="text-xs font-mono text-blue-600 hover:underline">
+                                <a href="https://dimsumnya.my.id" target="_blank" class="text-xs text-blue-600 hover:underline">
                                     dimsumnya.my.id ↗
                                 </a>
                             </div>
@@ -173,7 +173,7 @@
                                 Merancang, membangun, dan mengimplementasikan sistem kasir serta inventori berbasis web (Laravel Filament v3) untuk mendukung operasional harian karyawan secara <em>real-time</em>. Bertanggung jawab atas konfigurasi <em>deployment</em> ke <em>hosting</em>, pemeliharaan <em>database</em>, serta pendampingan teknis (<em>application support</em>) bagi staf kasir dalam memantau antrean pesanan, mencetak struk, mengawasi sisa stok <em>freezer</em> dan barang rusak, hingga memisahkan omset harian otomatis antara QRIS dan uang tunai di laci kasir.
                             </p>
                         </div>
-                        <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-mono text-slate-500">
+                        <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs text-slate-500">
                             <span>Laravel Filament</span> • <span>Web Hosting</span> • <span>Application Support</span>
                         </div>
                     </div>
@@ -189,10 +189,10 @@
                     <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div>
                             <div class="flex items-center justify-between gap-2 mb-2">
-                                <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
                                     LIVE • 1.916+ TRANSAKSI
                                 </span>
-                                <a href="https://kopinusaan.my.id" target="_blank" class="text-xs font-mono text-blue-600 hover:underline">
+                                <a href="https://kopinusaan.my.id" target="_blank" class="text-xs text-blue-600 hover:underline">
                                     kopinusaan.my.id ↗
                                 </a>
                             </div>
@@ -201,7 +201,7 @@
                                 Membangun aplikasi kasir berbasis web dan mengelola konfigurasi <em>domain</em> serta <em>web hosting</em> publik yang berjalan stabil menangani lebih dari <strong>1.916 transaksi operasional nyata</strong> (1.072 transaksi tunai dan 844 transaksi QRIS). Peran mencakup pengelolaan infrastruktur <em>hosting</em>, pemeliharaan fitur kasir baru dan <em>reset</em> harian, pemantauan produk terlaris, serta dukungan teknis langsung bagi staf kasir.
                             </p>
                         </div>
-                        <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-mono text-slate-500">
+                        <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs text-slate-500">
                             <span>PHP & MySQL</span> • <span>Domain & Hosting</span> • <span>POS System</span>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                     <div class="md:col-span-7 min-w-0 p-6 flex flex-col justify-between space-y-4">
                         <div>
                             <div class="flex items-center gap-2 mb-2">
-                                <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300">
+                                <span class="text-[11px] font-medium px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300">
                                     LOCAL SERVER
                                 </span>
                             </div>
@@ -226,7 +226,7 @@
                                 Merancang dan membuat aplikasi sistem informasi berbasis web beserta struktur <em>database</em> pada <em>local server</em> untuk mendigitalisasi pengelolaan inventori gudang dan pencatatan donasi secara terstruktur. Dilengkapi fitur pemantauan arus keluar-masuk barang 30 hari terakhir, deteksi peringatan stok menipis (<em>warning stock</em>), pengelompokan distribusi barang, serta pencatatan riwayat aktivitas (<em>activity log</em>) antara Admin dan Supplier secara <em>real-time</em>.
                             </p>
                         </div>
-                        <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-mono text-slate-500">
+                        <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-2 text-xs text-slate-500">
                             <span>Local Server</span> • <span>Database Management</span> • <span>Inventory & Log System</span>
                         </div>
                     </div>
@@ -236,11 +236,11 @@
             <!-- Bagian B: Arsitektur Lab Server, Jaringan & Dokumentasi GitHub -->
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                 <div>
-                    <h3 class="text-xs font-mono uppercase tracking-wider text-slate-500 font-semibold">
+                    <h3 class="text-xs uppercase tracking-wider text-slate-500 font-semibold">
                         B. Laboratorium Infrastruktur Server & Sistem Operasi (Home Lab Documentation)
                     </h3>
                 </div>
-                <a href="https://github.com/JueViole-aldi?tab=repositories" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-slate-700 hover:text-blue-600 transition">
+                <a href="https://github.com/JueViole-aldi?tab=repositories" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-700 hover:text-blue-600 transition">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                     Profil GitHub (JueViole-aldi) ↗
                 </a>
@@ -258,11 +258,11 @@
                                     WIN
                                 </div>
                                 <div class="min-w-0">
-                                    <span class="block text-[11px] font-mono text-blue-600 font-medium truncate">JueViole-aldi / windows-server-homelab</span>
+                                    <span class="block text-[11px] text-blue-600 font-medium truncate">JueViole-aldi / windows-server-homelab</span>
                                     <h4 class="text-base font-bold text-slate-900 leading-snug">Windows Server 2019 & Endpoint Windows 10 Lab</h4>
                                 </div>
                             </div>
-                            <span class="self-start text-[11px] font-mono bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded whitespace-nowrap flex-shrink-0">
+                            <span class="self-start text-[11px] bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded whitespace-nowrap flex-shrink-0">
                                 Dokumentasi & Screenshot
                             </span>
                         </div>
@@ -274,22 +274,22 @@
                         <!-- 3 Kelompok Modul Detail Windows Server -->
                         <div class="space-y-2.5 pt-1">
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">01. Active Directory (`dsa.msc`), OU & DHCP (`dhcpmgmt.msc`)</p>
-                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pengelolaan akun pengguna dan <em>Organizational Unit (OU)</em> per divisi, konfigurasi <em>DHCP Scope</em> (`.10`–`.100`), penanganan <em>Rogue DHCP / IP Conflict</em> (<code>ipconfig /release & /renew</code>), serta uji konektivitas ICMP Ping dua arah (<code>0% packet loss</code>).</p>
+                                <p class="text-xs font-bold text-slate-800">01. Active Directory (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">dsa.msc</code>), OU & DHCP (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">dhcpmgmt.msc</code>)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pengelolaan akun pengguna dan <em>Organizational Unit (OU)</em> per divisi, konfigurasi <em>DHCP Scope</em> (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">.10</code>–<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">.100</code>), penanganan <em>Rogue DHCP / IP Conflict</em> (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">ipconfig /release & /renew</code>), serta uji konektivitas ICMP Ping dua arah (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">0% packet loss</code>).</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">02. SMB File Server & Deployment MS Office LTSC 2021 (`.bat`)</p>
-                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Penyediaan <em>Shared Folder</em> terpusat, pemetaan <em>Network Drive</em> (<code>net use Z:</code>), serta otomatisasi instalasi <strong>Microsoft Office LTSC 2021</strong> menggunakan <em>Office Deployment Tool</em> (<code>setup.exe</code> & <code>Configuration.xml</code>) melalui <em>Batch Script</em>.</p>
+                                <p class="text-xs font-bold text-slate-800">02. SMB File Server & Deployment MS Office LTSC 2021 (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">.bat</code>)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Penyediaan <em>Shared Folder</em> terpusat, pemetaan <em>Network Drive</em> (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">net use Z:</code>), serta otomatisasi instalasi <strong>Microsoft Office LTSC 2021</strong> menggunakan <em>Office Deployment Tool</em> (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">setup.exe</code> & <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">Configuration.xml</code>) melalui <em>Batch Script</em>.</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">03. Group Policy (`gpmc.msc`), Event Viewer & Firewall (`wf.msc`)</p>
-                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Penerapan pembatasan akses <em>Control Panel</em> di sisi Client via GPO (<code>gpupdate /force</code> & <code>gpresult /r</code>), pelacakan <em>error log</em> sistem di <em>Windows Event Viewer</em>, dan pengaturan aturan <em>port</em> pada <em>Windows Firewall</em>.</p>
+                                <p class="text-xs font-bold text-slate-800">03. Group Policy (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">gpmc.msc</code>), Event Viewer & Firewall (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">wf.msc</code>)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Penerapan pembatasan akses <em>Control Panel</em> di sisi Client via GPO (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">gpupdate /force</code> & <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">gpresult /r</code>), pelacakan <em>error log</em> sistem di <em>Windows Event Viewer</em>, dan pengaturan aturan <em>port</em> pada <em>Windows Firewall</em>.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                        <span class="text-xs font-mono text-slate-500">AD DS • DHCP • SMB ODT • GPO • Firewall</span>
+                        <span class="text-xs text-slate-500">AD DS • DHCP • SMB ODT • GPO • Firewall</span>
                         <a href="https://github.com/JueViole-aldi/windows-server-homelab" target="_blank" class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold bg-slate-900 text-white px-4 py-2.5 rounded-md hover:bg-slate-800 transition w-full sm:w-auto">
                             Lihat Dokumentasi & Screenshot ↗
                         </a>
@@ -305,11 +305,11 @@
                                     &gt;_
                                 </div>
                                 <div class="min-w-0">
-                                    <span class="block text-[11px] font-mono text-blue-600 font-medium truncate">JueViole-aldi / linux-server-administration</span>
+                                    <span class="block text-[11px] text-blue-600 font-medium truncate">JueViole-aldi / linux-server-administration</span>
                                     <h4 class="text-base font-bold text-slate-900 leading-snug">Linux (Ubuntu 26.04.1 LTS) Administration Lab</h4>
                                 </div>
                             </div>
-                            <span class="self-start text-[11px] font-mono bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded whitespace-nowrap flex-shrink-0">
+                            <span class="self-start text-[11px] bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded whitespace-nowrap flex-shrink-0">
                                 Dokumentasi & Screenshot
                             </span>
                         </div>
@@ -321,22 +321,22 @@
                         <!-- 3 Kelompok Modul Detail Linux Server -->
                         <div class="space-y-2.5 pt-1">
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">01. Manajemen User, Grup Divisi & Hak Akses (`chmod 750`)</p>
-                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pembuatan akun staf (<code>adduser</code>), pengelompokan grup divisi (<code>groupadd</code>, <code>usermod</code>, <code>gpasswd</code>), perubahan kepemilikan direktori (<code>chown</code>), serta pembatasan izin akses folder kerja bersama (<code>chmod 750</code>).</p>
+                                <p class="text-xs font-bold text-slate-800">01. Manajemen User, Grup Divisi & Hak Akses (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">chmod 750</code>)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pembuatan akun staf (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">adduser</code>), pengelompokan grup divisi (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">groupadd</code>, <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">usermod</code>, <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">gpasswd</code>), perubahan kepemilikan direktori (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">chown</code>), serta pembatasan izin akses folder kerja bersama (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">chmod 750</code>).</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
                                 <p class="text-xs font-bold text-slate-800">02. Manajemen Paket, Storage Audit & System Logs</p>
-                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pengelolaan paket aplikasi (<code>apt</code> & <code>dpkg -s</code>), pemeriksaan kapasitas partisi dan direktori (<code>df -h</code>, <code>lsblk</code>, <code>du -sh</code>), pemantauan CPU/RAM & PID (<code>htop</code>), serta investigasi log pada <code>/var/log/syslog</code> dengan <code>tail</code> dan <code>grep</code>.</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pengelolaan paket aplikasi (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">apt</code> & <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">dpkg -s</code>), pemeriksaan kapasitas partisi dan direktori (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">df -h</code>, <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">lsblk</code>, <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">du -sh</code>), pemantauan CPU/RAM & PID (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">htop</code>), serta investigasi log pada <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">/var/log/syslog</code> dengan <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">tail</code> dan <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">grep</code>.</p>
                             </div>
                             <div class="p-3 rounded-md bg-slate-50 border border-slate-200/80">
-                                <p class="text-xs font-bold text-slate-800">03. Firewall (UFW), Remote SSH Lintas OS & Backup (`tar` / Cron)</p>
-                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pengamanan port layanan dengan <em>Uncomplicated Firewall</em> (<code>ufw allow ssh</code> & <code>80/tcp</code>), pengujian kendali jarak jauh via OpenSSH dari CMD Windows 10, serta kompresi <em>backup</em> direktori (<code>tar -czvf</code>) dan jadwal otomatis (<code>crontab -e</code>).</p>
+                                <p class="text-xs font-bold text-slate-800">03. Firewall (UFW), Remote SSH Lintas OS & Backup (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">tar</code> / Cron)</p>
+                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">Pengamanan port layanan dengan <em>Uncomplicated Firewall</em> (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">ufw allow ssh</code> & <code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">80/tcp</code>), pengujian kendali jarak jauh via OpenSSH dari CMD Windows 10, serta kompresi <em>backup</em> direktori (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">tar -czvf</code>) dan jadwal otomatis (<code class="font-mono text-[11px] bg-slate-200/60 text-slate-700 px-1 py-0.5 rounded">crontab -e</code>).</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                        <span class="text-xs font-mono text-slate-500">Ubuntu 26.04 LTS • Chmod • Syslog • SSH</span>
+                        <span class="text-xs text-slate-500">Ubuntu 26.04 LTS • Chmod • Syslog • SSH</span>
                         <a href="https://github.com/JueViole-aldi/linux-server-administration" target="_blank" class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold bg-slate-900 text-white px-4 py-2.5 rounded-md hover:bg-slate-800 transition w-full sm:w-auto">
                             Lihat Dokumentasi & Screenshot ↗
                         </a>
@@ -349,60 +349,62 @@
         <!-- Sertifikasi & Pelatihan -->
         <section id="sertifikasi" class="py-16 border-b border-slate-200">
             <div class="mb-10">
-                <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Kredensial &amp; Lisensi</p>
+                <p class="text-xs uppercase tracking-wider text-blue-600 font-semibold">Kredensial &amp; Lisensi</p>
                 <h2 class="text-2xl font-bold text-slate-900 mt-1">Sertifikasi Kompetensi</h2>
             </div>
 
             <div class="space-y-6">
 
                 <!-- Kartu 1: Google IT Support Professional Certificate -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
+                <article class="bg-white rounded-xl border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
                     <!-- Kolom Kiri: Preview & Slider Sertifikat -->
-                    <div class="md:col-span-5 min-w-0 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
-                        <div class="relative w-full h-56 sm:h-64 md:h-auto md:flex-1 md:min-h-[240px] overflow-hidden group flex items-center justify-center bg-slate-100 p-2">
-                            <img id="coursera-card-img" src="sertif-coursera.jpg" alt="Sertifikat Google IT Support Coursera"
-                                 onclick="openSliderLightbox('coursera')"
-                                 class="w-full h-full object-contain cursor-pointer group-hover:scale-[1.02] transition duration-300"
-                                 onerror="handleCertImgError(this, 'Sertifikat+Coursera')">
+                    <div class="md:col-span-5 min-w-0 bg-slate-100/80 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col">
+                        <div class="relative w-full h-60 sm:h-64 md:h-auto md:flex-1 md:min-h-[260px] overflow-hidden group">
+                            <div class="absolute inset-0 p-4 flex items-center justify-center">
+                                <img id="coursera-card-img" src="sertif-coursera.jpg" alt="Sertifikat Google IT Support Coursera"
+                                     onclick="openSliderLightbox('coursera')"
+                                     class="max-w-full max-h-full w-auto h-auto object-contain rounded shadow-sm border border-slate-200/80 bg-white cursor-pointer group-hover:scale-[1.02] transition duration-300"
+                                     onerror="handleCertImgError(this, 'Sertifikat+Coursera')">
+                            </div>
 
-                            <span id="coursera-card-badge" class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-mono px-2.5 py-0.5 rounded pointer-events-none">
+                            <span id="coursera-card-badge" class="absolute top-3 right-3 z-10 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-medium px-2.5 py-0.5 rounded-full pointer-events-none">
                                 1 / 2
                             </span>
 
-                            <button type="button" onclick="changeCertSlide('coursera', -1, event)" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-900/70 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition" title="Sertifikat Sebelumnya">
+                            <button type="button" onclick="changeCertSlide('coursera', -1, event)" class="absolute left-2.5 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-slate-900/75 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition shadow" title="Sertifikat Sebelumnya">
                                 &#10094;
                             </button>
 
-                            <button type="button" onclick="changeCertSlide('coursera', 1, event)" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-900/70 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition" title="Sertifikat Berikutnya">
+                            <button type="button" onclick="changeCertSlide('coursera', 1, event)" class="absolute right-2.5 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-slate-900/75 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition shadow" title="Sertifikat Berikutnya">
                                 &#10095;
                             </button>
                         </div>
-                        <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-2 min-w-0">
+                        <div class="px-4 py-2.5 bg-white border-t border-slate-200 flex items-center justify-between gap-2 min-w-0 flex-shrink-0">
                             <span id="coursera-card-title" class="text-xs font-medium text-slate-700 truncate min-w-0 flex-1">
                                 1. Technical Support Fundamentals
                             </span>
-                            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap flex-shrink-0">Klik untuk zoom</span>
+                            <span class="text-[11px] text-slate-400 whitespace-nowrap flex-shrink-0">Klik untuk zoom</span>
                         </div>
                     </div>
 
                     <!-- Kolom Kanan: Detail Program & Fokus Modul -->
-                    <div class="md:col-span-7 min-w-0 p-5 sm:p-6 flex flex-col justify-between space-y-5">
-                        <div class="space-y-4">
+                    <div class="md:col-span-7 min-w-0 p-5 sm:p-6 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3.5">
                             <div class="flex flex-wrap items-center justify-between gap-2">
-                                <span class="text-xs font-mono font-semibold text-blue-600">Google • Coursera</span>
-                                <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">
+                                <span class="text-xs font-semibold text-blue-600">Google • Coursera</span>
+                                <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
                                     Professional Certificate
                                 </span>
                             </div>
 
                             <div>
                                 <h3 class="text-lg font-bold text-slate-900 leading-snug">Google IT Support Professional Certificate</h3>
-                                <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">
+                                <p class="text-sm text-slate-600 mt-1 leading-relaxed">
                                     Program sertifikasi berjenjang yang mencakup fundamental dukungan IT, administrasi sistem operasi, jaringan komputer, hingga pengelolaan infrastruktur server.
                                 </p>
                             </div>
 
-                            <div class="space-y-2.5 pt-1 text-xs text-slate-600 leading-relaxed">
+                            <div class="space-y-2 pt-1 text-xs text-slate-600 leading-relaxed">
                                 <div class="pl-3 border-l-2 border-blue-600">
                                     <span class="font-semibold text-slate-900">System Administration &amp; IT Infrastructure Services:</span>
                                     Manajemen <em>Directory Services</em> (Active Directory, GPO), DNS/DHCP, <em>file sharing</em>, virtualisasi, serta strategi <em>backup &amp; recovery</em>.
@@ -418,9 +420,9 @@
                             </div>
                         </div>
 
-                        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                            <span class="text-xs font-mono text-slate-500">Active Directory • Linux CLI • DNS/DHCP • TCP/IP</span>
-                            <a href="#proyek" class="text-xs font-mono font-medium text-blue-600 hover:underline whitespace-nowrap">
+                        <div class="pt-3.5 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                            <span class="text-xs text-slate-500">Active Directory • Linux CLI • DNS/DHCP • TCP/IP</span>
+                            <a href="#proyek" class="text-xs font-semibold text-blue-600 hover:underline whitespace-nowrap">
                                 Lihat Praktik Lab ↗
                             </a>
                         </div>
@@ -428,67 +430,69 @@
                 </article>
 
                 <!-- Kartu 2: Sertifikat Kompetensi BNSP -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
+                <article class="bg-white rounded-xl border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
                     <!-- Kolom Kiri: Preview & Slider Depan/Belakang BNSP -->
-                    <div class="md:col-span-5 min-w-0 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
-                        <div class="relative w-full h-64 sm:h-72 md:h-auto md:flex-1 md:min-h-[260px] overflow-hidden group flex items-center justify-center bg-slate-100 p-2">
-                            <img id="bnsp-card-img" src="sertif-bnsp.jpg" alt="Sertifikat Kompetensi BNSP"
-                                 onclick="openSliderLightbox('bnsp')"
-                                 class="w-full h-full object-contain cursor-pointer group-hover:scale-[1.02] transition duration-300"
-                                 onerror="handleCertImgError(this, 'Sertifikat+BNSP')">
+                    <div class="md:col-span-5 min-w-0 bg-slate-100/80 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col">
+                        <div class="relative w-full h-64 sm:h-72 md:h-auto md:flex-1 md:min-h-[260px] overflow-hidden group">
+                            <div class="absolute inset-0 p-4 flex items-center justify-center">
+                                <img id="bnsp-card-img" src="sertif-bnsp.jpg" alt="Sertifikat Kompetensi BNSP"
+                                     onclick="openSliderLightbox('bnsp')"
+                                     class="max-w-full max-h-full w-auto h-auto object-contain rounded shadow-sm border border-slate-200/80 bg-white cursor-pointer group-hover:scale-[1.02] transition duration-300"
+                                     onerror="handleCertImgError(this, 'Sertifikat+BNSP')">
+                            </div>
 
-                            <span id="bnsp-card-badge" class="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-mono px-2.5 py-0.5 rounded pointer-events-none">
+                            <span id="bnsp-card-badge" class="absolute top-3 right-3 z-10 bg-slate-900/80 backdrop-blur-sm text-white text-[11px] font-medium px-2.5 py-0.5 rounded-full pointer-events-none">
                                 1 / 2
                             </span>
 
-                            <button type="button" onclick="changeCertSlide('bnsp', -1, event)" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-900/70 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition" title="Halaman Sebelumnya">
+                            <button type="button" onclick="changeCertSlide('bnsp', -1, event)" class="absolute left-2.5 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-slate-900/75 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition shadow" title="Halaman Sebelumnya">
                                 &#10094;
                             </button>
 
-                            <button type="button" onclick="changeCertSlide('bnsp', 1, event)" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-900/70 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition" title="Halaman Berikutnya">
+                            <button type="button" onclick="changeCertSlide('bnsp', 1, event)" class="absolute right-2.5 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-slate-900/75 text-white hover:bg-slate-900 flex items-center justify-center text-xs transition shadow" title="Halaman Berikutnya">
                                 &#10095;
                             </button>
                         </div>
-                        <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-2 min-w-0">
+                        <div class="px-4 py-2.5 bg-white border-t border-slate-200 flex items-center justify-between gap-2 min-w-0 flex-shrink-0">
                             <span id="bnsp-card-title" class="text-xs font-medium text-slate-700 truncate min-w-0 flex-1">
                                 1. Halaman Depan — Sertifikat Kompetensi
                             </span>
-                            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap flex-shrink-0">Klik untuk zoom</span>
+                            <span class="text-[11px] text-slate-400 whitespace-nowrap flex-shrink-0">Klik untuk zoom</span>
                         </div>
                     </div>
 
                     <!-- Kolom Kanan: Detail BNSP -->
-                    <div class="md:col-span-7 min-w-0 p-5 sm:p-6 flex flex-col justify-between space-y-5">
-                        <div class="space-y-4">
+                    <div class="md:col-span-7 min-w-0 p-5 sm:p-6 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3.5">
                             <div class="flex flex-wrap items-center justify-between gap-2">
-                                <span class="text-xs font-mono font-semibold text-blue-600">BNSP • LSP SMK Al Hidayah 1 Jakarta</span>
-                                <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">
+                                <span class="text-xs font-semibold text-blue-600">BNSP • LSP SMK Al Hidayah 1 Jakarta</span>
+                                <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
                                     KKNI Level II • Okt 2022
                                 </span>
                             </div>
 
                             <div>
                                 <h3 class="text-lg font-bold text-slate-900 leading-snug">Sertifikat Kompetensi — Teknik Komputer dan Jaringan</h3>
-                                <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">
+                                <p class="text-sm text-slate-600 mt-1 leading-relaxed">
                                     Sertifikasi kompetensi nasional dari Badan Nasional Sertifikasi Profesi (BNSP) pada bidang Teknik Komputer dan Jaringan (<em>Computer and Network Engineering</em>).
                                 </p>
                             </div>
 
-                            <div class="space-y-2.5 pt-1 text-xs text-slate-600 leading-relaxed">
+                            <div class="space-y-2 pt-1 text-xs text-slate-600 leading-relaxed">
                                 <div class="pl-3 border-l-2 border-blue-600">
                                     <span class="font-semibold text-slate-900">Kualifikasi KKNI Level II (TKJ):</span>
                                     Teruji secara praktik dalam instalasi perangkat jaringan lokal (LAN/WLAN), konfigurasi <em>routing</em> dasar, dan administrasi infrastruktur jaringan.
                                 </div>
                                 <div class="pl-3 border-l-2 border-slate-300">
                                     <span class="font-semibold text-slate-900">Detail Registrasi:</span>
-                                    No. Sertifikat <code class="break-all">61100 2522 2 0000942 2022</code> • No. Reg. <code class="break-all">J. 1252 00751 2022</code> (Diterbitkan 21 Oktober 2022).
+                                    No. Sertifikat <span class="font-medium text-slate-700">61100 2522 2 0000942 2022</span> • No. Reg. <span class="font-medium text-slate-700">J. 1252 00751 2022</span> (Diterbitkan 21 Oktober 2022).
                                 </div>
                             </div>
                         </div>
 
-                        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                            <span class="text-xs font-mono text-slate-500">KKNI Level II • LAN/WLAN • Network Admin</span>
-                            <button type="button" onclick="openSliderLightbox('bnsp')" class="text-xs font-mono font-medium text-blue-600 hover:underline whitespace-nowrap text-left sm:text-right">
+                        <div class="pt-3.5 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                            <span class="text-xs text-slate-500">KKNI Level II • LAN/WLAN • Network Admin</span>
+                            <button type="button" onclick="openSliderLightbox('bnsp')" class="text-xs font-semibold text-blue-600 hover:underline whitespace-nowrap text-left sm:text-right">
                                 Lihat Depan &amp; Belakang ↗
                             </button>
                         </div>
@@ -496,41 +500,43 @@
                 </article>
 
                 <!-- Kartu 3: Sertifikat Udemy -->
-                <article class="bg-white rounded-lg border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
+                <article class="bg-white rounded-xl border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-12">
                     <!-- Kolom Kiri: Preview Sertifikat Udemy -->
-                    <div class="md:col-span-5 min-w-0 bg-slate-100 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col justify-between">
-                        <div class="relative w-full h-56 sm:h-64 md:h-auto md:flex-1 md:min-h-[240px] overflow-hidden group flex items-center justify-center bg-white p-2">
-                            <img src="sertif-udemy.jpg" alt="Sertifikat Udemy IT Support Technical Skills Bootcamp"
-                                 onclick="openLightbox(this.src, 'IT Support Technical Skills Bootcamp — Udemy (Jobskillshare Community)')"
-                                 class="w-full h-full object-contain cursor-pointer group-hover:scale-[1.02] transition duration-300"
-                                 onerror="handleCertImgError(this, 'Sertifikat+Udemy')">
+                    <div class="md:col-span-5 min-w-0 bg-slate-100/80 border-b md:border-b-0 md:border-r border-slate-200 flex flex-col">
+                        <div class="relative w-full h-60 sm:h-64 md:h-auto md:flex-1 md:min-h-[250px] overflow-hidden group">
+                            <div class="absolute inset-0 p-4 flex items-center justify-center">
+                                <img src="sertif-udemy.jpg" alt="Sertifikat Udemy IT Support Technical Skills Bootcamp"
+                                     onclick="openLightbox(this.src, 'IT Support Technical Skills Bootcamp — Udemy (Jobskillshare Community)')"
+                                     class="max-w-full max-h-full w-auto h-auto object-contain rounded shadow-sm border border-slate-200/80 bg-white cursor-pointer group-hover:scale-[1.02] transition duration-300"
+                                     onerror="handleCertImgError(this, 'Sertifikat+Udemy')">
+                            </div>
                         </div>
-                        <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-2 min-w-0">
+                        <div class="px-4 py-2.5 bg-white border-t border-slate-200 flex items-center justify-between gap-2 min-w-0 flex-shrink-0">
                             <span class="text-xs font-medium text-slate-700 truncate min-w-0 flex-1">
                                 Sertifikat Penyelesaian — 42,5 Jam
                             </span>
-                            <span class="text-[11px] font-mono text-slate-400 whitespace-nowrap flex-shrink-0">Klik untuk zoom</span>
+                            <span class="text-[11px] text-slate-400 whitespace-nowrap flex-shrink-0">Klik untuk zoom</span>
                         </div>
                     </div>
 
                     <!-- Kolom Kanan: Detail Udemy -->
-                    <div class="md:col-span-7 min-w-0 p-5 sm:p-6 flex flex-col justify-between space-y-5">
-                        <div class="space-y-4">
+                    <div class="md:col-span-7 min-w-0 p-5 sm:p-6 flex flex-col justify-between space-y-4">
+                        <div class="space-y-3.5">
                             <div class="flex flex-wrap items-center justify-between gap-2">
-                                <span class="text-xs font-mono font-semibold text-blue-600">Udemy • Jobskillshare Community</span>
-                                <span class="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">
+                                <span class="text-xs font-semibold text-blue-600">Udemy • Jobskillshare Community</span>
+                                <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
                                     42.5 Jam • Sep 2026
                                 </span>
                             </div>
 
                             <div>
                                 <h3 class="text-lg font-bold text-slate-900 leading-snug">IT Support Technical Skills Bootcamp</h3>
-                                <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">
+                                <p class="text-sm text-slate-600 mt-1 leading-relaxed">
                                     Pelatihan teknis intensif (42,5 jam) yang berfokus pada operasional harian IT Support, administrasi lingkungan kerja Windows, dan penanganan tiket dukungan pengguna.
                                 </p>
                             </div>
 
-                            <div class="space-y-2.5 pt-1 text-xs text-slate-600 leading-relaxed">
+                            <div class="space-y-2 pt-1 text-xs text-slate-600 leading-relaxed">
                                 <div class="pl-3 border-l-2 border-blue-600">
                                     <span class="font-semibold text-slate-900">Active Directory &amp; Windows Server:</span>
                                     Pengelolaan akun pengguna, <em>reset password</em>, konfigurasi <em>workstation</em> domain, dan pemeliharaan layanan kantor.
@@ -542,9 +548,9 @@
                             </div>
                         </div>
 
-                        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                            <span class="text-xs font-mono text-slate-500">Active Directory • Windows Admin • Helpdesk</span>
-                            <a href="https://ude.my/UC-dc64b772-eda3-4190-bf6c-567a6df74402" target="_blank" class="text-xs font-mono font-medium text-blue-600 hover:underline whitespace-nowrap">
+                        <div class="pt-3.5 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                            <span class="text-xs text-slate-500">Active Directory • Windows Admin • Helpdesk</span>
+                            <a href="https://ude.my/UC-dc64b772-eda3-4190-bf6c-567a6df74402" target="_blank" class="text-xs font-semibold text-blue-600 hover:underline whitespace-nowrap">
                                 Verifikasi Sertifikat ↗
                             </a>
                         </div>
@@ -561,14 +567,14 @@
                 <!-- Kolom Pengalaman Kerja -->
                 <div class="md:col-span-7 min-w-0 space-y-6">
                     <div>
-                        <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Rekam Jejak</p>
+                        <p class="text-xs uppercase tracking-wider text-blue-600 font-semibold">Rekam Jejak</p>
                         <h2 class="text-2xl font-bold text-slate-900 mt-1">Pengalaman Kerja & Operasional</h2>
                     </div>
 
                     <div class="space-y-6 border-l-2 border-slate-200 pl-5">
                         <!-- Pengalaman 1 -->
                         <div class="relative">
-                            <span class="text-xs font-mono text-slate-500">Feb 2026 • PT Qupro Indonesia</span>
+                            <span class="text-xs text-slate-500">Feb 2026 • PT Qupro Indonesia</span>
                             <h3 class="text-base font-bold text-slate-900 mt-0.5">Koordinator Tim Fundraising — Event Sekolah Islam Madani Nurul Fikri Boarding School Lembang</h3>
                             <ul class="mt-2 space-y-1.5 text-sm text-slate-600 list-disc list-inside">
                                 <li>Memimpin dan memberikan arahan (<em>briefing</em>) kepada tim relawan daerah (santri) terkait tata cara dan strategi penggalangan dana yang terstruktur di lapangan.</li>
@@ -579,7 +585,7 @@
 
                         <!-- Pengalaman 2 -->
                         <div class="relative pt-2">
-                            <span class="text-xs font-mono text-slate-500">Sep 2025 • PT Qupro Indonesia</span>
+                            <span class="text-xs text-slate-500">Sep 2025 • PT Qupro Indonesia</span>
                             <h3 class="text-base font-bold text-slate-900 mt-0.5">Liaison Officer (LO) — Event HNI</h3>
                             <ul class="mt-2 space-y-1.5 text-sm text-slate-600 list-disc list-inside">
                                 <li>Bertanggung jawab mendampingi dan mengoordinasikan jadwal <em>talent</em> utama (Cing Abdel) untuk memastikan seluruh agenda acara berjalan sesuai <em>rundown</em>.</li>
@@ -590,7 +596,7 @@
 
                         <!-- Pengalaman 3 -->
                         <div class="relative pt-2">
-                            <span class="text-xs font-mono text-slate-500">Mar 2024 • Bank Saqu</span>
+                            <span class="text-xs text-slate-500">Mar 2024 • Bank Saqu</span>
                             <h3 class="text-base font-bold text-slate-900 mt-0.5">Verifikator — PT SEBELAS APRIL LIAN MIPRO</h3>
                             <ul class="mt-2 space-y-1.5 text-sm text-slate-600 list-disc list-inside">
                                 <li>Mendampingi dan memandu calon nasabah secara langsung dalam proses registrasi serta verifikasi pembukaan rekening baru pada aplikasi digital Bank Saqu.</li>
@@ -604,7 +610,7 @@
                 <!-- Kolom Pendidikan -->
                 <div class="md:col-span-5 min-w-0 space-y-6">
                     <div>
-                        <p class="text-xs font-mono uppercase tracking-wider text-blue-600 font-semibold">Akademik</p>
+                        <p class="text-xs uppercase tracking-wider text-blue-600 font-semibold">Akademik</p>
                         <h2 class="text-2xl font-bold text-slate-900 mt-1">Pendidikan</h2>
                     </div>
 
@@ -618,7 +624,7 @@
                                      onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=unpam.ac.id&sz=128';">
                             </div>
                             <div>
-                                <span class="text-xs font-mono text-slate-500">2022 – 2026</span>
+                                <span class="text-xs text-slate-500">2022 – 2026</span>
                                 <h3 class="font-bold text-slate-900 text-base mt-0.5">Universitas Pamulang</h3>
                                 <p class="text-sm text-slate-600 mt-0.5">S1 — Sistem Informasi</p>
                             </div>
@@ -633,7 +639,7 @@
                                      onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=smkalhidayah1jakarta.sch.id&sz=128';">
                             </div>
                             <div>
-                                <span class="text-xs font-mono text-slate-500">2019 – 2022</span>
+                                <span class="text-xs text-slate-500">2019 – 2022</span>
                                 <h3 class="font-bold text-slate-900 text-base mt-0.5">SMK Al Hidayah 1 Jakarta</h3>
                                 <p class="text-sm text-slate-600 mt-0.5">Teknik Komputer dan Jaringan (TKJ)</p>
                             </div>
@@ -648,7 +654,7 @@
         <section id="kontak" class="pt-16 pb-24 md:pb-16">
             <div class="bg-slate-900 text-white rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div class="space-y-2">
-                    <p class="text-xs font-mono uppercase tracking-wider text-blue-400">Kontak & Ketersediaan</p>
+                    <p class="text-xs uppercase tracking-wider text-blue-400">Kontak & Ketersediaan</p>
                     <h2 class="text-2xl font-bold">Siap berkontribusi untuk tim IT perusahaan Anda.</h2>
                     <p class="text-sm text-slate-300">Domisili: Depok / Jakarta Selatan • Tersedia untuk posisi IT Support, Helpdesk, & Network/System Admin.</p>
                 </div>
@@ -680,7 +686,7 @@
         <div class="relative max-w-4xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
             <div class="w-full flex justify-between items-center text-white mb-3 px-1">
                 <span id="lightbox-caption" class="text-sm font-medium"></span>
-                <button onclick="closeLightbox()" class="text-xs font-mono bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded text-white transition">
+                <button onclick="closeLightbox()" class="text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded text-white transition">
                     Tutup [ESC]
                 </button>
             </div>
